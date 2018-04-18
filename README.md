@@ -4,7 +4,10 @@ gitbook 的基本用法非常简单，基本上就只有两步：
 1. 使用 `gitbook init` 初始化书籍目录
 2. 使用 `gitbook serve` 编译书籍
 
-# CMD
+# Study List
+* [GitBook 简明教程](http://www.chengweiyang.cn/gitbook/)
+* [git serve can't restart when file changes](https://github.com/GitbookIO/gitbook/issues/1379)
+# CLI
 * gitbook serve
 
 `gitbook serve` 命令实际上会首先调用 `gitbook build` 编译书籍，完成以后会打开一个 web 服务器，监听在本地的 4000 端口。
