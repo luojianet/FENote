@@ -1,6 +1,8 @@
 # Introduction
-This is a book powered by [GitBook](https://github.com/GitbookIO/gitbook).
+gitbook 的基本用法非常简单，基本上就只有两步：
 
+1.使用 `gitbook init` 初始化书籍目录
+2.使用 `gitbook serve` 编译书籍
 # CLI
 * gitbook serve
 ```
@@ -23,3 +25,4 @@ info: >> generation finished with success in 0.6s !
 Starting server ...
 Serving book on http://localhost:4000
 ```
+`gitbook serve` 命令实际上会首先调用 `gitbook build` 编译书籍，完成以后会打开一个 web 服务器，监听在本地的 4000 端口。
