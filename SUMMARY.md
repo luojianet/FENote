@@ -2,6 +2,6 @@
 
 * [Introduction](README.md)
 * [Chapter1](chapter1/README.md)
-  * [Section1.1](chapter1/section1.1.md)
-  * [Section1.2](chapter1/section1.2.md)
+  * [谷歌浏览器插件](chapter1/ChromePlugin.md)
+  * [Sublime编辑器插件](chapter1/SublimeTextPlugin.md)
 * [Chapter2](chapter2/README.md)
