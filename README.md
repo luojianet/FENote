@@ -3,9 +3,9 @@ gitbook 的基本用法非常简单，基本上就只有两步：
 
 1.使用 `gitbook init` 初始化书籍目录
 2.使用 `gitbook serve` 编译书籍
-# CLI
+# commond line
 * gitbook serve
-```
+```shell
 $ gitbook serve
 Live reload server started on port: 35729
 Press CTRL+C to quit ...
@@ -26,3 +26,14 @@ Starting server ...
 Serving book on http://localhost:4000
 ```
 `gitbook serve` 命令实际上会首先调用 `gitbook build` 编译书籍，完成以后会打开一个 web 服务器，监听在本地的 4000 端口。
+* nslookup febook.xuliehaonet.com
+```shell
+服务器:  UnKnown
+Address:  192.168.8.24
+
+非权威应答:
+名称:    cdn.gitbook.com
+Address:  128.199.232.1
+Aliases:  febook.xuliehaonet.com
+          www.gitbooks.io
+```
