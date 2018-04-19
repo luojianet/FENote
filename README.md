@@ -71,3 +71,5 @@ Error: EPERM: operation not permitted, lstat 'G:\gitbook-touchevent\_book'
 node version:4.4.2
 gitook version: 2.2.0
 ```
+# 笔记
+* 配置host加速访问`139.59.16.50 febook.xuliehaonet.com`
