@@ -1,8 +1,13 @@
 # Summary
 
-* [Introduction](README.md)
-* [Chapter1](chapter1/README.md)
+* [简介](README.md)
+* [技术](chapter1/README.md)
+	* [NodeJS学习笔记](chapter1/NodeJS.md)
+* [工具](chapter2/README.md)
+	* [NPM学习笔记](chapter1/NPM.md)
+	* [Git学习笔记](chapter1/Git.md)
+	* [Webpack 4学习笔记](chapter1/WebPack.md)
+	* [Sublime编辑器](chapter1/SublimeTextPlugin.md)
 	* [GitBook使用笔记](chapter1/GitBook.md)
 	* [谷歌浏览器插件](chapter1/ChromePlugin.md)
-	* [Sublime编辑器](chapter1/SublimeTextPlugin.md)
-* [Chapter2](chapter2/README.md)
+	* [MarkdownCheatSheet](chapter1/MarkdownCheatSheet.md)
