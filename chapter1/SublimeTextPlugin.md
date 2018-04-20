@@ -30,8 +30,7 @@ E36B85CC 84991F19 7575D828 470A92AB
 ```
 # Sublime Plugin
 * PackageControl
-* Alignment ctrl+alt+a
-* DocBlockr /**
+* DocBlockr
 * Emmet
 * EmmetOneLine
 * SyncedSideBar
@@ -41,24 +40,28 @@ E36B85CC 84991F19 7575D828 470A92AB
 * SublimeCodeIntel
 * BracketHighlighter
 * Markdown Preview
+* Alignment
+```
+快捷键 CTRL+ALT+A
+```
 * HTMLBeautify
 ```
-快捷键Ctrl+Alt+Shift+F
+快捷键 CTRL+ALT+SHIFT+F
 ```
 * JsFormat
 ```
-快捷键Ctrl+Alt+F
+快捷键 CTRL+ALT+F
+```
+* ColorPicker 
+```
+快捷键 CTRL+SHIFT+C
 ```
 * SFTP
-```javascript
+```
 {
     "email": "xiaosong@xiaosong.me",
     "product_key": "d419f6-de89e9-0aae59-2acea1-07f92a"
 }
-```
-* ColorPicker 
-```
-快捷键 ctrl+shift+c
 ```
 * Vue Syntax Highlight
 ```
@@ -68,7 +71,8 @@ view->syntax->Vue Component
 ```
 * rem-unit
 ```
-参数配置文件：Sublime Text -> Preferences -> Package Settings -> rem-unit
+参数配置文件：
+Sublime Text -> Preferences -> Package Settings -> rem-unit
 fontsize - html元素font-size值，默认为16。
 precision - px转rem的小数部分的最大长度，默认为8。
 leadingzero - 是否保留前导0，默认不保留。
