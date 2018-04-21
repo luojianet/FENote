@@ -1,16 +1,16 @@
 # Study Webpack 4
 Webpack is a bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows to load parts for the application on demand. Through "loaders," modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff. 
 # 官网Learn List
-1. [Guides](https://webpack.js.org/guides/)
-2. [Installation](https://webpack.js.org/guides/installation/)
-3. [Getting Started](https://webpack.js.org/guides/getting-started/)
-4. [Asset Management](https://webpack.js.org/guides/asset-management/)
-5. [Output Management](https://webpack.js.org/guides/output-management/)
-6. [Development](https://webpack.js.org/guides/development/)
-7. [Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/)
-8. [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
-9. [Production](https://webpack.js.org/guides/production/)
-10. [Code Splitting](https://webpack.js.org/guides/code-splitting/)
+* [Guides](https://webpack.js.org/guides/)
+* [Installation](https://webpack.js.org/guides/installation/)
+* [Getting Started](https://webpack.js.org/guides/getting-started/)
+* [Asset Management](https://webpack.js.org/guides/asset-management/)
+* [Output Management](https://webpack.js.org/guides/output-management/)
+* [Development](https://webpack.js.org/guides/development/)
+* [Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/)
+* [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
+* [Production](https://webpack.js.org/guides/production/)
+* [Code Splitting](https://webpack.js.org/guides/code-splitting/)
 ## 文章学习列表
 * [使用 webpack 定制前端开发环境](https://juejin.im/book/5a6abad5518825733c144469)
 ```
@@ -85,6 +85,7 @@ C:\Users\Administrator\AppData\Roaming\npm
 `-- webpack-cli@2.0.13
 ```
 *  npm list --depth=0 (**记录**：`UNMET PEER DEPENDENCY webpack@4.4.1`未满足的对等的依赖 )
+
 ```
 $ npm list --depth=0 
 webpack-demo4@1.0.0 C:\github\webpack\AssetManagement
@@ -202,7 +203,9 @@ new webpack.DefinePlugin({
   'process.env.NODE_ENV': JSON.stringify('production')
 })
 ```        
+
 # webpack参数列表
+
 ```
 $ npx webpack --help
 npx: installed 1 in 2.868s
@@ -361,6 +364,7 @@ Options:
   --silent       Prevent output from being displayed in stdout         [boolean]
   --json, -j     Prints the result as JSON.                            [boolean]
 ```
+
 # webpack常用参数
 * --help
 * --version
@@ -375,6 +379,7 @@ Options:
 * --json > stats.json
 * --env.production    # 设置 env.production == true
 * --env.platform=web  # 设置 env.platform == "web"
+
 # 学习webpack 4依赖模块列表
 ```
 "devDependencies": {
@@ -447,6 +452,7 @@ Options:
     }, ]
 }
 ```
+
 ```
 {
     test: /\.jpeg$/,
@@ -454,6 +460,7 @@ Options:
 }
 ```
 * webpack.config.js commonJS模块化写法
+
 ```
 const path = require('path');
 
@@ -472,7 +479,9 @@ const config = {
 
 module.exports = config;
 ```
+
 * In order to use a plugin, you need to `require()` it and add it to the `plugins` array. Most plugins are customizable through options. Since you can use a plugin multiple times in a config for different purposes, you need to create an instance of it by calling it with the `new` operator.
+
 ```
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 const webpack = require('webpack'); //to access built-in plugins
@@ -503,6 +512,7 @@ const config = {
 * If your configuration creates more than a single "chunk" (as with multiple entry points or when using plugins like CommonsChunkPlugin), you should use substitutions to ensure that each file has a unique name.
 * Please remember that setting `NODE_ENV` doesn't automatically set `mode`.
 * Mode: development's mains
+
 ```webpack.config.js
 // webpack.development.config.js
 module.exports = {
@@ -513,7 +523,9 @@ module.exports = {
 - ]
 }
 ```
+
 * Mode: production's mains
+
 ```
 // webpack.production.config.js
 module.exports = {
@@ -526,6 +538,7 @@ module.exports = {
 -  ]
 }
 ```
+
 * Using Loaders
 
 	There are three ways to use loaders in your application:
