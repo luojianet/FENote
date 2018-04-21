@@ -62,6 +62,7 @@ $ npm config get registry
 ttps://registry.npm.taobao.org
 ```
 * npm config --help
+
 ```
 $ npm config --help
 npm config set <key> <value>
@@ -75,6 +76,7 @@ npm get [<key>]
 alias: c
 ```
 * npm config --list
+
 ```
 $ npm config list
 ; cli configs
@@ -99,6 +101,7 @@ prefix = "C:\\Users\\Administrator\\AppData\\Roaming\\npm"
 ; "npm config ls -l" to show all defaults.
 ```
 * npm config list -l
+
 ```
 $ npm config list -l
 ; cli configs
@@ -244,6 +247,7 @@ npm http 200 https://registry.npmjs.org/-/whoami
 luojianet
 ```
 * npm view count_sheep
+
 ```
 $ npm view count_sheep
 npm http request GET https://registry.npmjs.org/count_sheep
@@ -301,6 +305,7 @@ npm http 200 https://registry.npmjs.org/count_sheep
   directories: {} }
 ```
 * npm view count_sheep version
+
 ```
 $ npm view count_sheep version
 npm http request GET https://registry.npmjs.org/count_sheep
@@ -308,6 +313,7 @@ npm http 200 https://registry.npmjs.org/count_sheep
 1.0.10
 ```
 * npm view count_sheep dist
+
 ```
 $ npm view count_sheep dist
 npm http request GET https://registry.npmjs.org/count_sheep
@@ -318,6 +324,7 @@ npm http 200 https://registry.npmjs.org/count_sheep
   tarball: 'https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz' }
 ```
 * npm init
+
 ```
 $ npm init
 This utility will walk you through creating a package.json file.
@@ -337,6 +344,7 @@ license: (ISC)
 About to write to C:\github\npm\package.json:
 ```
 * npm init -y
+
 ```
 $ npm init -y
 Wrote to C:\github\npm\package.json:
@@ -372,6 +380,7 @@ Wrote to C:\github\npm\package.json:
   "devDependencies": {}
 }
 ```
+
 * npm version
 ```
 $ npm version
@@ -392,11 +401,13 @@ $ npm version
   zlib: '1.2.11' }
 ```
 * npm publish
+
 ```
 [root@myServer project count_sheep]# npm publish
 + count_sheep@1.0.10
 ```
 * npm
+
 ```
 $ npm
 
@@ -426,6 +437,7 @@ Config info can be viewed via: npm help config
 npm@5.8.0 C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm
 ```
 * npm -l
+
 ```
 $ npm -l
 
@@ -649,6 +661,7 @@ Config info can be viewed via: npm help config
 npm@5.8.0 C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm
 ```
 * npm outdated
+
 ```
 $ npm outdated
 npm http request GET https://registry.npmjs.org/@luojianet%2fweb01
@@ -661,6 +674,7 @@ Package     Current  Wanted  Latest  Location
 element-ui   1.4.13  1.4.13   2.3.3  npm
 ```
 * npm dist-tag ls
+
 ```
 [root@v430 28001]# npm dist-tag ls npm
 3.x-latest: 3.10.9

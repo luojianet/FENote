@@ -339,54 +339,64 @@ npm config set registry https://registry.npm.taobao.org
 <li>npm config get registry<pre><code>$ npm config get registry
 ttps://registry.npm.taobao.org
 </code></pre></li>
-<li>npm config --help
-```
-$ npm config --help
-npm config set <key> <value>
-npm config get [<key>]
-npm config delete <key>
+<li>npm config --help</li>
+</ul>
+<pre><code>$ npm config --help
+npm config set &lt;key&gt; &lt;value&gt;
+npm config get [&lt;key&gt;]
+npm config delete &lt;key&gt;
 npm config list [--json]
 npm config edit
-npm set <key> <value>
-npm get [<key>]</key></value></key></key></key></value></key></li>
+npm set &lt;key&gt; &lt;value&gt;
+npm get [&lt;key&gt;]
+
+alias: c
+</code></pre><ul>
+<li>npm config --list</li>
 </ul>
-<p>alias: c</p>
-<pre><code>* npm config --list
-</code></pre><p>$ npm config list
+<pre><code>$ npm config list
 ; cli configs
-metrics-registry = &quot;<a href="https://registry.npm.taobao.org/" target="_blank">https://registry.npm.taobao.org/</a>&quot;
+metrics-registry = &quot;https://registry.npm.taobao.org/&quot;
 scope = &quot;&quot;
-user-agent = &quot;npm/5.8.0 node/v8.9.3 win32 x64&quot;</p>
-<p>; userconfig C:\Users\Administrator.npmrc
+user-agent = &quot;npm/5.8.0 node/v8.9.3 win32 x64&quot;
+
+; userconfig C:\Users\Administrator\.npmrc
 init.author.email = &quot;997948809@163.com&quot;
 init.author.name = &quot;luojianet&quot;
 list = &quot;&quot;
 loglevel = &quot;http&quot;
 registor = &quot;&quot;
-registry = &quot;<a href="https://registry.npm.taobao.org/" target="_blank">https://registry.npm.taobao.org/</a>&quot;</p>
-<p>; builtin config undefined
-prefix = &quot;C:\Users\Administrator\AppData\Roaming\npm&quot;</p>
-<p>; node bin location = C:\Program Files\nodejs\node.exe
+registry = &quot;https://registry.npm.taobao.org/&quot;
+
+; builtin config undefined
+prefix = &quot;C:\\Users\\Administrator\\AppData\\Roaming\\npm&quot;
+
+; node bin location = C:\Program Files\nodejs\node.exe
 ; cwd = C:\github\npm
 ; HOME = C:\Users\Administrator
-; &quot;npm config ls -l&quot; to show all defaults.</p>
-<pre><code>* npm config list -l
-</code></pre><p>$ npm config list -l
+; &quot;npm config ls -l&quot; to show all defaults.
+</code></pre><ul>
+<li>npm config list -l</li>
+</ul>
+<pre><code>$ npm config list -l
 ; cli configs
 long = true
 metrics-registry = &quot;ttps://registry.npm.taobao.org&quot;
 scope = &quot;&quot;
-user-agent = &quot;npm/5.8.0 node/v8.9.3 win32 x64&quot;</p>
-<p>; userconfig C:\Users\Administrator.npmrc
+user-agent = &quot;npm/5.8.0 node/v8.9.3 win32 x64&quot;
+
+; userconfig C:\Users\Administrator\.npmrc
 init.author.email = &quot;997948809@163.com&quot;
 init.author.name = &quot;luojianet&quot;
 list = &quot;&quot;
 loglevel = &quot;http&quot;
 registor = &quot;&quot;
-registry = &quot;ttps://registry.npm.taobao.org&quot;</p>
-<p>; builtin config undefined
-prefix = &quot;C:\Users\Administrator\AppData\Roaming\npm&quot;</p>
-<p>; default values
+registry = &quot;ttps://registry.npm.taobao.org&quot;
+
+; builtin config undefined
+prefix = &quot;C:\\Users\\Administrator\\AppData\\Roaming\\npm&quot;
+
+; default values
 access = null
 allow-same-version = false
 also = null
@@ -395,7 +405,7 @@ auth-type = &quot;legacy&quot;
 bin-links = true
 browser = null
 ca = null
-cache = &quot;C:\Users\Administrator\AppData\Roaming\npm-cache&quot;
+cache = &quot;C:\\Users\\Administrator\\AppData\\Roaming\\npm-cache&quot;
 cache-lock-retries = 10
 cache-lock-stale = 60000
 cache-lock-wait = 10000
@@ -421,8 +431,8 @@ git = &quot;git&quot;
 git-tag-version = true
 global = false
 global-style = false
-globalconfig = &quot;C:\Users\Administrator\AppData\Roaming\npm\etc\npmrc&quot;
-globalignorefile = &quot;C:\Users\Administrator\AppData\Roaming\npm\etc\npmignore&quot;
+globalconfig = &quot;C:\\Users\\Administrator\\AppData\\Roaming\\npm\\etc\\npmrc&quot;
+globalignorefile = &quot;C:\\Users\\Administrator\\AppData\\Roaming\\npm\\etc\\npmignore&quot;
 group = 0
 ham-it-up = false
 heading = &quot;npm&quot;
@@ -434,7 +444,7 @@ init-author-email = &quot;&quot;
 init-author-name = &quot;&quot;
 init-author-url = &quot;&quot;
 init-license = &quot;ISC&quot;
-init-module = &quot;C:\Users\Administrator\.npm-init.js&quot;
+init-module = &quot;C:\\Users\\Administrator\\.npm-init.js&quot;
 init-version = &quot;1.0.0&quot;
 json = false
 key = null
@@ -460,13 +470,13 @@ package-lock-only = false
 parseable = false
 prefer-offline = false
 prefer-online = false
-; prefix = &quot;C:\Program Files\nodejs&quot; (overridden)
+; prefix = &quot;C:\\Program Files\\nodejs&quot; (overridden)
 production = false
 progress = true
 proxy = null
 read-only = false
 rebuild-bundle = true
-; registry = &quot;<a href="https://registry.npmjs.org/" target="_blank">https://registry.npmjs.org/</a>&quot; (overridden)
+; registry = &quot;https://registry.npmjs.org/&quot; (overridden)
 rollback = true
 save = true
 save-bundle = false
@@ -483,7 +493,7 @@ searchlimit = 20
 searchopts = &quot;&quot;
 searchstaleness = 900
 send-metrics = false
-shell = &quot;C:\Windows\system32\cmd.exe&quot;
+shell = &quot;C:\\Windows\\system32\\cmd.exe&quot;
 shrinkwrap = true
 sign-git-tag = false
 sso-poll-frequency = 500
@@ -492,27 +502,30 @@ strict-ssl = true
 tag = &quot;latest&quot;
 tag-version-prefix = &quot;v&quot;
 timing = false
-tmp = &quot;C:\Users\ADMINI~1\AppData\Local\Temp&quot;
+tmp = &quot;C:\\Users\\ADMINI~1\\AppData\\Local\\Temp&quot;
 umask = 0
 unicode = false
 unsafe-perm = true
 usage = false
 user = 0
 ; user-agent = &quot;npm/{npm-version} node/{node-version} {platform} {arch}&quot; (overridden)
-userconfig = &quot;C:\Users\Administrator\.npmrc&quot;
+userconfig = &quot;C:\\Users\\Administrator\\.npmrc&quot;
 version = false
 versions = false
-viewer = &quot;browser&quot;</p>
-<pre><code>* npm whoami
-</code></pre><p>$ npm whoami
-npm http request GET <a href="https://registry.npmjs.org/-/whoami" target="_blank">https://registry.npmjs.org/-/whoami</a>
-npm http 200 <a href="https://registry.npmjs.org/-/whoami" target="_blank">https://registry.npmjs.org/-/whoami</a>
-luojianet</p>
-<pre><code>* npm view count_sheep
-</code></pre><p>$ npm view count_sheep
-npm http request GET <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a>
-npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a></p>
-<p>{ name: &apos;count_sheep&apos;,
+viewer = &quot;browser&quot;
+</code></pre><ul>
+<li>npm whoami<pre><code>$ npm whoami
+npm http request GET https://registry.npmjs.org/-/whoami
+npm http 200 https://registry.npmjs.org/-/whoami
+luojianet
+</code></pre></li>
+<li>npm view count_sheep</li>
+</ul>
+<pre><code>$ npm view count_sheep
+npm http request GET https://registry.npmjs.org/count_sheep
+npm http 200 https://registry.npmjs.org/count_sheep
+
+{ name: &apos;count_sheep&apos;,
   description: &apos;Count sheep app,For xshell sleep.npm run-script start,npm run-script shram,npm run-script pwd&apos;,
   &apos;dist-tags&apos;: { latest: &apos;1.0.10&apos;, beta: &apos;1.0.6&apos;, test: &apos;1.0.5&apos; },
   versions:
@@ -526,7 +539,7 @@ npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">ht
      &apos;1.0.8&apos;,
      &apos;1.0.9&apos;,
      &apos;1.0.10&apos; ],
-  maintainers: [ &apos;luojianet <a href="mailto:a3729251989@gmail.com" target="_blank">a3729251989@gmail.com</a>&apos; ],
+  maintainers: [ &apos;luojianet &lt;a3729251989@gmail.com&gt;&apos; ],
   time:
    { modified: &apos;2017-08-30T10:33:43.587Z&apos;,
      created: &apos;2017-02-02T14:32:39.666Z&apos;,
@@ -541,13 +554,13 @@ npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">ht
      &apos;1.0.8&apos;: &apos;2017-02-03T23:49:13.262Z&apos;,
      &apos;1.0.9&apos;: &apos;2017-08-29T02:26:30.891Z&apos;,
      &apos;1.0.10&apos;: &apos;2017-08-29T02:44:59.904Z&apos; },
-  homepage: &apos;<a href="https://github.com/luojianet/nodejs#readme" target="_blank">https://github.com/luojianet/nodejs#readme</a>&apos;,
+  homepage: &apos;https://github.com/luojianet/nodejs#readme&apos;,
   keywords: [ &apos;Count sheep&apos;, &apos;Count star&apos; ],
   repository:
    { type: &apos;git&apos;,
      url: &apos;git+ssh://git@github.com/luojianet/nodejs.git&apos; },
-  author: &apos;luojianet <a href="mailto:a3729251989@gmail.com" target="_blank">a3729251989@gmail.com</a>&apos;,
-  bugs: { url: &apos;<a href="https://github.com/luojianet/nodejs/issues" target="_blank">https://github.com/luojianet/nodejs/issues</a>&apos; },
+  author: &apos;luojianet &lt;a3729251989@gmail.com&gt;&apos;,
+  bugs: { url: &apos;https://github.com/luojianet/nodejs/issues&apos; },
   license: &apos;MIT&apos;,
   readmeFilename: &apos;README.md&apos;,
   users: { xuliehao: true },
@@ -560,38 +573,51 @@ npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">ht
   dist:
    { integrity: &apos;sha512-JX4c2fvuXwJ9bcrUzmxeBGbP+lLALPAi+2uUuShhEp1npEfcW7yfmnCmrswqfdlEZEleHCPQxEI2+0Yp8FKuzA==&apos;,
      shasum: &apos;9928cdb7d8ca8059855c60fe3f754bd9ea0e94d3&apos;,
-     tarball: &apos;<a href="https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz" target="_blank">https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz</a>&apos; },
-  directories: {} }</p>
-<pre><code>* npm view count_sheep version
-</code></pre><p>$ npm view count_sheep version
-npm http request GET <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a>
-npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a>
-1.0.10</p>
-<pre><code>* npm view count_sheep dist
-</code></pre><p>$ npm view count_sheep dist
-npm http request GET <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a>
-npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a></p>
-<p>{ integrity: &apos;sha512-JX4c2fvuXwJ9bcrUzmxeBGbP+lLALPAi+2uUuShhEp1npEfcW7yfmnCmrswqfdlEZEleHCPQxEI2+0Yp8FKuzA==&apos;,
+     tarball: &apos;https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz&apos; },
+  directories: {} }
+</code></pre><ul>
+<li>npm view count_sheep version</li>
+</ul>
+<pre><code>$ npm view count_sheep version
+npm http request GET https://registry.npmjs.org/count_sheep
+npm http 200 https://registry.npmjs.org/count_sheep
+1.0.10
+</code></pre><ul>
+<li>npm view count_sheep dist</li>
+</ul>
+<pre><code>$ npm view count_sheep dist
+npm http request GET https://registry.npmjs.org/count_sheep
+npm http 200 https://registry.npmjs.org/count_sheep
+
+{ integrity: &apos;sha512-JX4c2fvuXwJ9bcrUzmxeBGbP+lLALPAi+2uUuShhEp1npEfcW7yfmnCmrswqfdlEZEleHCPQxEI2+0Yp8FKuzA==&apos;,
   shasum: &apos;9928cdb7d8ca8059855c60fe3f754bd9ea0e94d3&apos;,
-  tarball: &apos;<a href="https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz" target="_blank">https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz</a>&apos; }</p>
-<pre><code>* npm init
-</code></pre><p>$ npm init
+  tarball: &apos;https://registry.npmjs.org/count_sheep/-/count_sheep-1.0.10.tgz&apos; }
+</code></pre><ul>
+<li>npm init</li>
+</ul>
+<pre><code>$ npm init
 This utility will walk you through creating a package.json file.
-It only covers the most common items, and tries to guess sensible defaults.</p>
-<p>See <code>npm help json</code> for definitive documentation on these fields
-and exactly what they do.</p>
-<p>Use <code>npm install &lt;pkg&gt;</code> afterwards to install a package and
-save it as a dependency in the package.json file.</p>
-<p>Press ^C at any time to quit.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install &lt;pkg&gt;` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
 package name: (npm)
 version: (1.0.0)
 entry point: (index.js)
 license: (ISC)
-About to write to C:\github\npm\package.json:</p>
-<pre><code>* npm init -y
-</code></pre><p>$ npm init -y
-Wrote to C:\github\npm\package.json:</p>
-<p>{
+About to write to C:\github\npm\package.json:
+</code></pre><ul>
+<li>npm init -y</li>
+</ul>
+<pre><code>$ npm init -y
+Wrote to C:\github\npm\package.json:
+
+{
   &quot;name&quot;: &quot;npm&quot;,
   &quot;version&quot;: &quot;1.0.0&quot;,
   &quot;description&quot;: &quot;npm command repository&quot;,
@@ -601,15 +627,15 @@ Wrote to C:\github\npm\package.json:</p>
   },
   &quot;repository&quot;: {
     &quot;type&quot;: &quot;git&quot;,
-    &quot;url&quot;: &quot;git+<a href="https://github.com/luojianet/npm.git" target="_blank">https://github.com/luojianet/npm.git</a>&quot;
+    &quot;url&quot;: &quot;git+https://github.com/luojianet/npm.git&quot;
   },
   &quot;keywords&quot;: [],
-  &quot;author&quot;: &quot;luojianet <a href="mailto:997948809@163.com" target="_blank">997948809@163.com</a>&quot;,
+  &quot;author&quot;: &quot;luojianet &lt;997948809@163.com&gt;&quot;,
   &quot;license&quot;: &quot;ISC&quot;,
   &quot;bugs&quot;: {
-    &quot;url&quot;: &quot;<a href="https://github.com/luojianet/npm/issues" target="_blank">https://github.com/luojianet/npm/issues</a>&quot;
+    &quot;url&quot;: &quot;https://github.com/luojianet/npm/issues&quot;
   },
-  &quot;homepage&quot;: &quot;<a href="https://github.com/luojianet/npm#readme" target="_blank">https://github.com/luojianet/npm#readme</a>&quot;,
+  &quot;homepage&quot;: &quot;https://github.com/luojianet/npm#readme&quot;,
   &quot;dependencies&quot;: {
     &quot;@luojianet/web01&quot;: &quot;^1.0.0&quot;,
     &quot;count_sheep&quot;: &quot;^1.0.8&quot;,
@@ -620,35 +646,37 @@ Wrote to C:\github\npm\package.json:</p>
     &quot;doc&quot;: &quot;docs&quot;
   },
   &quot;devDependencies&quot;: {}
-}</p>
-<pre><code>* npm version
-</code></pre><p>$ npm version
+}
+</code></pre><ul>
+<li>npm version<pre><code>$ npm version
 { webpack: &apos;4.4.1&apos;,
-  npm: &apos;5.8.0&apos;,
-  ares: &apos;1.10.1-DEV&apos;,
-  cldr: &apos;31.0.1&apos;,
-  http_parser: &apos;2.7.0&apos;,
-  icu: &apos;59.1&apos;,
-  modules: &apos;57&apos;,
-  nghttp2: &apos;1.25.0&apos;,
-  node: &apos;8.9.3&apos;,
-  openssl: &apos;1.0.2n&apos;,
-  tz: &apos;2017b&apos;,
-  unicode: &apos;9.0&apos;,
-  uv: &apos;1.15.0&apos;,
-  v8: &apos;6.1.534.48&apos;,
-  zlib: &apos;1.2.11&apos; }</p>
-<pre><code>* npm publish
-</code></pre><p>[root@myServer project count_sheep]# npm publish</p>
-<ul>
-<li>count_sheep@1.0.10
-```</li>
-<li>npm
-```
-$ npm</li>
+npm: &apos;5.8.0&apos;,
+ares: &apos;1.10.1-DEV&apos;,
+cldr: &apos;31.0.1&apos;,
+http_parser: &apos;2.7.0&apos;,
+icu: &apos;59.1&apos;,
+modules: &apos;57&apos;,
+nghttp2: &apos;1.25.0&apos;,
+node: &apos;8.9.3&apos;,
+openssl: &apos;1.0.2n&apos;,
+tz: &apos;2017b&apos;,
+unicode: &apos;9.0&apos;,
+uv: &apos;1.15.0&apos;,
+v8: &apos;6.1.534.48&apos;,
+zlib: &apos;1.2.11&apos; }
+</code></pre></li>
+<li>npm publish</li>
 </ul>
-<p>Usage: npm <command></p>
-<p>where <command> is one of:
+<pre><code>[root@myServer project count_sheep]# npm publish
++ count_sheep@1.0.10
+</code></pre><ul>
+<li>npm</li>
+</ul>
+<pre><code>$ npm
+
+Usage: npm &lt;command&gt;
+
+where &lt;command&gt; is one of:
     access, adduser, bin, bugs, c, cache, ci, completion,
     config, ddp, dedupe, deprecate, dist-tag, docs, doctor,
     edit, explore, get, help, help-search, i, init, install,
@@ -657,243 +685,258 @@ $ npm</li>
     publish, rb, rebuild, repo, restart, root, run, run-script,
     s, se, search, set, shrinkwrap, star, stars, start, stop, t,
     team, test, token, tst, un, uninstall, unpublish, unstar,
-    up, update, v, version, view, whoami</p>
-<p>npm <command> -h     quick help on <command>
+    up, update, v, version, view, whoami
+
+npm &lt;command&gt; -h     quick help on &lt;command&gt;
 npm -l           display full usage info
-npm help <term>  search for help on <term>
-npm help npm     involved overview</term></term></p>
-<p>Specify configs in the ini-formatted file:
-    C:\Users\Administrator.npmrc
-or on the command line via: npm <command> --key value
-Config info can be viewed via: npm help config</p>
-<p>npm@5.8.0 C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm</p>
-<pre><code>* npm -l
-</code></pre><p>$ npm -l</p>
-<p>Usage: npm <command></p>
-<p>where <command> is one of:</p>
-<pre><code>access       npm access public [&lt;package&gt;]
-             npm access restricted [&lt;package&gt;]
-             npm access grant &lt;read-only|read-write&gt; &lt;scope:team&gt; [&lt;package&gt;]
-             npm access revoke &lt;scope:team&gt; [&lt;package&gt;]
-             npm access ls-packages [&lt;user&gt;|&lt;scope&gt;|&lt;scope:team&gt;]
-             npm access ls-collaborators [&lt;package&gt; [&lt;user&gt;]]
-             npm access edit [&lt;package&gt;]
+npm help &lt;term&gt;  search for help on &lt;term&gt;
+npm help npm     involved overview
 
-adduser      npm adduser [--registry=url] [--scope=@orgname] [--auth-type=legacy] [--always-auth]
+Specify configs in the ini-formatted file:
+    C:\Users\Administrator\.npmrc
+or on the command line via: npm &lt;command&gt; --key value
+Config info can be viewed via: npm help config
 
-             aliases: login, add-user
+npm@5.8.0 C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm
+</code></pre><ul>
+<li>npm -l</li>
+</ul>
+<pre><code>$ npm -l
 
-bin          npm bin [--global]
+Usage: npm &lt;command&gt;
 
-bugs         npm bugs [&lt;pkgname&gt;]
+where &lt;command&gt; is one of:
 
-             alias: issues
+    access       npm access public [&lt;package&gt;]
+                 npm access restricted [&lt;package&gt;]
+                 npm access grant &lt;read-only|read-write&gt; &lt;scope:team&gt; [&lt;package&gt;]
+                 npm access revoke &lt;scope:team&gt; [&lt;package&gt;]
+                 npm access ls-packages [&lt;user&gt;|&lt;scope&gt;|&lt;scope:team&gt;]
+                 npm access ls-collaborators [&lt;package&gt; [&lt;user&gt;]]
+                 npm access edit [&lt;package&gt;]
 
-cache        npm cache add &lt;tarball file&gt;
-             npm cache add &lt;folder&gt;
-             npm cache add &lt;tarball url&gt;
-             npm cache add &lt;git url&gt;
-             npm cache add &lt;name&gt;@&lt;version&gt;
-             npm cache clean
-             npm cache verify
+    adduser      npm adduser [--registry=url] [--scope=@orgname] [--auth-type=legacy] [--always-auth]
 
-ci           npm ci
+                 aliases: login, add-user
 
-completion   source &lt;(npm completion)
+    bin          npm bin [--global]
 
-config       npm config set &lt;key&gt; &lt;value&gt;
-             npm config get [&lt;key&gt;]
-             npm config delete &lt;key&gt;
-             npm config list [--json]
-             npm config edit
-             npm set &lt;key&gt; &lt;value&gt;
-             npm get [&lt;key&gt;]
+    bugs         npm bugs [&lt;pkgname&gt;]
 
-             alias: c
+                 alias: issues
 
-dedupe       npm dedupe
+    cache        npm cache add &lt;tarball file&gt;
+                 npm cache add &lt;folder&gt;
+                 npm cache add &lt;tarball url&gt;
+                 npm cache add &lt;git url&gt;
+                 npm cache add &lt;name&gt;@&lt;version&gt;
+                 npm cache clean
+                 npm cache verify
 
-             aliases: ddp, find-dupes
+    ci           npm ci
 
-deprecate    npm deprecate &lt;pkg&gt;[@&lt;version&gt;] &lt;message&gt;
+    completion   source &lt;(npm completion)
 
-dist-tag     npm dist-tag add &lt;pkg&gt;@&lt;version&gt; [&lt;tag&gt;]
-             npm dist-tag rm &lt;pkg&gt; &lt;tag&gt;
-             npm dist-tag ls [&lt;pkg&gt;]
+    config       npm config set &lt;key&gt; &lt;value&gt;
+                 npm config get [&lt;key&gt;]
+                 npm config delete &lt;key&gt;
+                 npm config list [--json]
+                 npm config edit
+                 npm set &lt;key&gt; &lt;value&gt;
+                 npm get [&lt;key&gt;]
 
-             alias: dist-tags
+                 alias: c
 
-docs         npm docs &lt;pkgname&gt;
-             npm docs .
+    dedupe       npm dedupe
 
-             alias: home
+                 aliases: ddp, find-dupes
 
-doctor       npm doctor
+    deprecate    npm deprecate &lt;pkg&gt;[@&lt;version&gt;] &lt;message&gt;
 
-edit         npm edit &lt;pkg&gt;[@&lt;version&gt;]
+    dist-tag     npm dist-tag add &lt;pkg&gt;@&lt;version&gt; [&lt;tag&gt;]
+                 npm dist-tag rm &lt;pkg&gt; &lt;tag&gt;
+                 npm dist-tag ls [&lt;pkg&gt;]
 
-explore      npm explore &lt;pkg&gt; [ -- &lt;command&gt;]
+                 alias: dist-tags
 
-get          npm get &lt;key&gt; &lt;value&gt; (See `npm config`)
+    docs         npm docs &lt;pkgname&gt;
+                 npm docs .
 
-help
+                 alias: home
 
-help-search  npm help-search &lt;text&gt;
+    doctor       npm doctor
 
-init         npm init [--force|-f|--yes|-y]
+    edit         npm edit &lt;pkg&gt;[@&lt;version&gt;]
 
-install
-             npm install (with no args, in package dir)
-             npm install [&lt;@scope&gt;/]&lt;pkg&gt;
-             npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;tag&gt;
-             npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version&gt;
-             npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version range&gt;
-             npm install &lt;folder&gt;
-             npm install &lt;tarball file&gt;
-             npm install &lt;tarball url&gt;
-             npm install &lt;git:// url&gt;
-             npm install &lt;github username&gt;/&lt;github project&gt;
+    explore      npm explore &lt;pkg&gt; [ -- &lt;command&gt;]
 
-             aliases: i, isntall, add
-             common options: [--save-prod|--save-dev|--save-optional] [--save-exact] [--no-save]
+    get          npm get &lt;key&gt; &lt;value&gt; (See `npm config`)
 
-install-test
-             npm install-test [args]
-             Same args as `npm install`
+    help
 
-             alias: it
+    help-search  npm help-search &lt;text&gt;
 
-link         npm link (in package dir)
-             npm link [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]
+    init         npm init [--force|-f|--yes|-y]
 
-             alias: ln
+    install
+                 npm install (with no args, in package dir)
+                 npm install [&lt;@scope&gt;/]&lt;pkg&gt;
+                 npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;tag&gt;
+                 npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version&gt;
+                 npm install [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version range&gt;
+                 npm install &lt;folder&gt;
+                 npm install &lt;tarball file&gt;
+                 npm install &lt;tarball url&gt;
+                 npm install &lt;git:// url&gt;
+                 npm install &lt;github username&gt;/&lt;github project&gt;
 
-logout       npm logout [--registry=&lt;url&gt;] [--scope=&lt;@scope&gt;]
+                 aliases: i, isntall, add
+                 common options: [--save-prod|--save-dev|--save-optional] [--save-exact] [--no-save]
 
-ls           npm ls [[&lt;@scope&gt;/]&lt;pkg&gt; ...]
+    install-test
+                 npm install-test [args]
+                 Same args as `npm install`
 
-             aliases: list, la, ll
+                 alias: it
 
-outdated     npm outdated [[&lt;@scope&gt;/]&lt;pkg&gt; ...]
+    link         npm link (in package dir)
+                 npm link [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]
 
-owner        npm owner add &lt;user&gt; [&lt;@scope&gt;/]&lt;pkg&gt;
-             npm owner rm &lt;user&gt; [&lt;@scope&gt;/]&lt;pkg&gt;
-             npm owner ls [&lt;@scope&gt;/]&lt;pkg&gt;
+                 alias: ln
 
-             alias: author
+    logout       npm logout [--registry=&lt;url&gt;] [--scope=&lt;@scope&gt;]
 
-pack         npm pack [[&lt;@scope&gt;/]&lt;pkg&gt;...]
+    ls           npm ls [[&lt;@scope&gt;/]&lt;pkg&gt; ...]
 
-ping         npm ping
-             ping registry
+                 aliases: list, la, ll
 
-prefix       npm prefix [-g]
+    outdated     npm outdated [[&lt;@scope&gt;/]&lt;pkg&gt; ...]
 
-profile      npm profile enable-2fa [auth-only|auth-and-writes]
-             npm profile disable-2fa
-             npm profile get [&lt;key&gt;]
-             npm profile set &lt;key&gt; &lt;value&gt;
+    owner        npm owner add &lt;user&gt; [&lt;@scope&gt;/]&lt;pkg&gt;
+                 npm owner rm &lt;user&gt; [&lt;@scope&gt;/]&lt;pkg&gt;
+                 npm owner ls [&lt;@scope&gt;/]&lt;pkg&gt;
 
-prune        npm prune [[&lt;@scope&gt;/]&lt;pkg&gt;...] [--production]
+                 alias: author
 
-publish      npm publish [&lt;tarball&gt;|&lt;folder&gt;] [--tag &lt;tag&gt;] [--access &lt;public|restricted&gt;]
+    pack         npm pack [[&lt;@scope&gt;/]&lt;pkg&gt;...]
 
-             Publishes &apos;.&apos; if no argument supplied
+    ping         npm ping
+                 ping registry
 
-             Sets tag `latest` if no --tag specified
+    prefix       npm prefix [-g]
 
-rebuild      npm rebuild [[&lt;@scope&gt;/&lt;name&gt;]...]
+    profile      npm profile enable-2fa [auth-only|auth-and-writes]
+                 npm profile disable-2fa
+                 npm profile get [&lt;key&gt;]
+                 npm profile set &lt;key&gt; &lt;value&gt;
 
-             alias: rb
+    prune        npm prune [[&lt;@scope&gt;/]&lt;pkg&gt;...] [--production]
 
-repo         npm repo [&lt;pkg&gt;]
+    publish      npm publish [&lt;tarball&gt;|&lt;folder&gt;] [--tag &lt;tag&gt;] [--access &lt;public|restricted&gt;]
 
-restart      npm restart [-- &lt;args&gt;]
+                 Publishes &apos;.&apos; if no argument supplied
 
-root         npm root [-g]
+                 Sets tag `latest` if no --tag specified
 
-run-script   npm run-script &lt;command&gt; [-- &lt;args&gt;...]
+    rebuild      npm rebuild [[&lt;@scope&gt;/&lt;name&gt;]...]
 
-             aliases: run, rum
+                 alias: rb
 
-search       npm search [--long] [search terms ...]
+    repo         npm repo [&lt;pkg&gt;]
 
-             aliases: s, se, find
+    restart      npm restart [-- &lt;args&gt;]
 
-set          npm set &lt;key&gt; &lt;value&gt; (See `npm config`)
+    root         npm root [-g]
 
-shrinkwrap   npm shrinkwrap
+    run-script   npm run-script &lt;command&gt; [-- &lt;args&gt;...]
 
-star         npm star [&lt;pkg&gt;...]
-             npm unstar [&lt;pkg&gt;...]
+                 aliases: run, rum
 
-             alias: unstar
+    search       npm search [--long] [search terms ...]
 
-stars        npm stars [&lt;user&gt;]
+                 aliases: s, se, find
 
-start        npm start [-- &lt;args&gt;]
+    set          npm set &lt;key&gt; &lt;value&gt; (See `npm config`)
 
-stop         npm stop [-- &lt;args&gt;]
+    shrinkwrap   npm shrinkwrap
 
-team         npm team create &lt;scope:team&gt;
-             npm team destroy &lt;scope:team&gt;
-             npm team add &lt;scope:team&gt; &lt;user&gt;
-             npm team rm &lt;scope:team&gt; &lt;user&gt;
-             npm team ls &lt;scope&gt;|&lt;scope:team&gt;
-             npm team edit &lt;scope:team&gt;
+    star         npm star [&lt;pkg&gt;...]
+                 npm unstar [&lt;pkg&gt;...]
 
-test         npm test [-- &lt;args&gt;]
+                 alias: unstar
 
-             aliases: tst, t
+    stars        npm stars [&lt;user&gt;]
 
-token        npm token list
-             npm token revoke &lt;tokenKey&gt;
-             npm token create [--read-only] [--cidr=list]
+    start        npm start [-- &lt;args&gt;]
 
+    stop         npm stop [-- &lt;args&gt;]
 
-uninstall    npm uninstall [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]... [--save-prod|--save-dev|--save-optional] [--no-save]
+    team         npm team create &lt;scope:team&gt;
+                 npm team destroy &lt;scope:team&gt;
+                 npm team add &lt;scope:team&gt; &lt;user&gt;
+                 npm team rm &lt;scope:team&gt; &lt;user&gt;
+                 npm team ls &lt;scope&gt;|&lt;scope:team&gt;
+                 npm team edit &lt;scope:team&gt;
 
-             aliases: un, unlink, remove, rm, r
+    test         npm test [-- &lt;args&gt;]
 
-unpublish    npm unpublish [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]
+                 aliases: tst, t
 
-update       npm update [-g] [&lt;pkg&gt;...]
+    token        npm token list
+                 npm token revoke &lt;tokenKey&gt;
+                 npm token create [--read-only] [--cidr=list]
 
-             aliases: up, upgrade, udpate
 
-version      npm version [&lt;newversion&gt; | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
-             (run in package dir)
-             &apos;npm -v&apos; or &apos;npm --version&apos; to print npm version (5.8.0)
-             &apos;npm view &lt;pkg&gt; version&apos; to view a package&apos;s published version
-             &apos;npm ls&apos; to inspect current package/dependency versions
+    uninstall    npm uninstall [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]... [--save-prod|--save-dev|--save-optional] [--no-save]
 
-view         npm view [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;] [&lt;field&gt;[.subfield]...]
+                 aliases: un, unlink, remove, rm, r
 
-             aliases: v, info, show
+    unpublish    npm unpublish [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]
 
-whoami       npm whoami [--registry &lt;registry&gt;]
-             (just prints username according to given registry)
-</code></pre><p>npm <command> -h     quick help on <command>
+    update       npm update [-g] [&lt;pkg&gt;...]
+
+                 aliases: up, upgrade, udpate
+
+    version      npm version [&lt;newversion&gt; | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
+                 (run in package dir)
+                 &apos;npm -v&apos; or &apos;npm --version&apos; to print npm version (5.8.0)
+                 &apos;npm view &lt;pkg&gt; version&apos; to view a package&apos;s published version
+                 &apos;npm ls&apos; to inspect current package/dependency versions
+
+    view         npm view [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;] [&lt;field&gt;[.subfield]...]
+
+                 aliases: v, info, show
+
+    whoami       npm whoami [--registry &lt;registry&gt;]
+                 (just prints username according to given registry)
+
+npm &lt;command&gt; -h     quick help on &lt;command&gt;
 npm -l           display full usage info
-npm help <term>  search for help on <term>
-npm help npm     involved overview</term></term></p>
-<p>Specify configs in the ini-formatted file:
-    C:\Users\Administrator.npmrc
-or on the command line via: npm <command> --key value
-Config info can be viewed via: npm help config</p>
-<p>npm@5.8.0 C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm</p>
-<pre><code>* npm outdated
-</code></pre><p>$ npm outdated
-npm http request GET <a href="https://registry.npmjs.org/@luojianet%2fweb01" target="_blank">https://registry.npmjs.org/@luojianet%2fweb01</a>
-npm http request GET <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a>
-npm http request GET <a href="https://registry.npmjs.org/element-ui" target="_blank">https://registry.npmjs.org/element-ui</a>
-npm http 200 <a href="https://registry.npmjs.org/count_sheep" target="_blank">https://registry.npmjs.org/count_sheep</a>
-npm http 200 <a href="https://registry.npmjs.org/element-ui" target="_blank">https://registry.npmjs.org/element-ui</a>
-npm http 200 <a href="https://registry.npmjs.org/@luojianet%2fweb01" target="_blank">https://registry.npmjs.org/@luojianet%2fweb01</a>
+npm help &lt;term&gt;  search for help on &lt;term&gt;
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\Administrator\.npmrc
+or on the command line via: npm &lt;command&gt; --key value
+Config info can be viewed via: npm help config
+
+npm@5.8.0 C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm
+</code></pre><ul>
+<li>npm outdated</li>
+</ul>
+<pre><code>$ npm outdated
+npm http request GET https://registry.npmjs.org/@luojianet%2fweb01
+npm http request GET https://registry.npmjs.org/count_sheep
+npm http request GET https://registry.npmjs.org/element-ui
+npm http 200 https://registry.npmjs.org/count_sheep
+npm http 200 https://registry.npmjs.org/element-ui
+npm http 200 https://registry.npmjs.org/@luojianet%2fweb01
 Package     Current  Wanted  Latest  Location
-element-ui   1.4.13  1.4.13   2.3.3  npm</p>
-<pre><code>* npm dist-tag ls
-</code></pre><p>[root@v430 28001]# npm dist-tag ls npm
+element-ui   1.4.13  1.4.13   2.3.3  npm
+</code></pre><ul>
+<li>npm dist-tag ls</li>
+</ul>
+<pre><code>[root@v430 28001]# npm dist-tag ls npm
 3.x-latest: 3.10.9
 3.x-next: 3.10.10
 latest-1: 1.4.29
@@ -905,46 +948,45 @@ next-2: 2.15.11
 next-3: 3.10.10
 next: 4.2.0
 v3.x-latest: 3.10.9
-v3.x-next: 3.10.10</p>
-<pre><code># &#x8BB0;&#x5F55;
-* &#x5168;&#x5C40;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF1A;C:\Users\Administrator\AppData\Roaming\npm\node_modules
-* npm update&#x5347;&#x7EA7;&#x9879;&#x76EE;&#x4F9D;&#x8D56;
-* npm update -g&#x5347;&#x7EA7;&#x5168;&#x5C40;&#x4F9D;&#x8D56;
-* &quot;npm config ls -l&quot; to show all defaults.
-* &#x5305;&#x8DEF;&#x5F84;https://www.npmjs.com/package/webpack
-* meta&#x6570;&#x636E;https://registry.npmjs.org/webpack
-* &#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;https://www.npmjs.com/~
-* npm login | npm adduser&#x5931;&#x8D25;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;`npm config set registry https://registry.npm.taobao.org`,&#x4FEE;&#x6539;&#x56DE;&#x5B98;&#x65B9;&#x94FE;&#x63A5;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x767B;&#x5F55;&#x4E86;
-* npm view count_sheep dist,&#x663E;&#x793A;&#x7684;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x4F1A;&#x6839;&#x636E;registry&#x7684;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#x800C;&#x4E0D;&#x540C;
-* Interactively create a package.json file `npm init [-f|--force|-y|--yes]` This will ask you a bunch of questions, and then write a package.json for you.
-* You can also set several config options for the init command. Some useful ones:
-</code></pre><blockquote>
-<p>npm set init.author.email &quot;wombat@npmjs.com&quot;
-npm set init.author.name &quot;ag_dubs&quot;
-npm set init.license &quot;MIT&quot;</p>
-<pre><code>* &#x547D;&#x4EE4;npm view&#x67E5;&#x770B;&#x9879;&#x76EE;&#x7684;metadata
-* &#x547D;&#x4EE4;npm view count_sheep time&#x67E5;&#x770B;&#x9879;&#x76EE;&#x7684;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x8F74;
-* &#x547D;&#x4EE4;npm list --depth=0&#x67E5;&#x770B;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x7684;&#x5305;
-* &#x547D;&#x4EE4;npm outdated --depth=0&#x67E5;&#x770B;&#x53EF;&#x66F4;&#x65B0;&#x7684;&#x5305;
-* npm &lt;cmd&gt; -h  quick help on &lt;cmd&gt;
-* updating npm:npm install npm@latest -g
-* npm -l display full usage info
-* npm view   View registry info  aliases: info, show, v
-* Patch releases: &#x8865;&#x4E01;&#x7248;&#x672C; 
-* Minor releases: &#x6B21;&#x7248;&#x672C;
-* Major releases: &#x4E3B;&#x7248;&#x672C;
-</code></pre><p>Tags are a supplement to semver for organizing and labeling different versions of packages.
+v3.x-next: 3.10.10
+</code></pre><h1 id="&#x8BB0;&#x5F55;">&#x8BB0;&#x5F55;</h1>
+<ul>
+<li>&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF1A;C:\Users\Administrator\AppData\Roaming\npm\node_modules</li>
+<li>npm update&#x5347;&#x7EA7;&#x9879;&#x76EE;&#x4F9D;&#x8D56;</li>
+<li>npm update -g&#x5347;&#x7EA7;&#x5168;&#x5C40;&#x4F9D;&#x8D56;</li>
+<li>&quot;npm config ls -l&quot; to show all defaults.</li>
+<li>&#x5305;&#x8DEF;&#x5F84;<a href="https://www.npmjs.com/package/webpack" target="_blank">https://www.npmjs.com/package/webpack</a></li>
+<li>meta&#x6570;&#x636E;<a href="https://registry.npmjs.org/webpack" target="_blank">https://registry.npmjs.org/webpack</a></li>
+<li>&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;<a href="https://www.npmjs.com/~" target="_blank">https://www.npmjs.com/~</a></li>
+<li>npm login | npm adduser&#x5931;&#x8D25;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;<code>npm config set registry https://registry.npm.taobao.org</code>,&#x4FEE;&#x6539;&#x56DE;&#x5B98;&#x65B9;&#x94FE;&#x63A5;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x767B;&#x5F55;&#x4E86;</li>
+<li>npm view count_sheep dist,&#x663E;&#x793A;&#x7684;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x4F1A;&#x6839;&#x636E;registry&#x7684;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#x800C;&#x4E0D;&#x540C;</li>
+<li>Interactively create a package.json file <code>npm init [-f|--force|-y|--yes]</code> This will ask you a bunch of questions, and then write a package.json for you.</li>
+<li>You can also set several config options for the init command. Some useful ones:<pre><code>&gt; npm set init.author.email &quot;wombat@npmjs.com&quot;
+&gt; npm set init.author.name &quot;ag_dubs&quot;
+&gt; npm set init.license &quot;MIT&quot;
+</code></pre></li>
+<li>&#x547D;&#x4EE4;npm view&#x67E5;&#x770B;&#x9879;&#x76EE;&#x7684;metadata</li>
+<li>&#x547D;&#x4EE4;npm view count_sheep time&#x67E5;&#x770B;&#x9879;&#x76EE;&#x7684;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x8F74;</li>
+<li>&#x547D;&#x4EE4;npm list --depth=0&#x67E5;&#x770B;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x7684;&#x5305;</li>
+<li>&#x547D;&#x4EE4;npm outdated --depth=0&#x67E5;&#x770B;&#x53EF;&#x66F4;&#x65B0;&#x7684;&#x5305;</li>
+<li>npm <cmd> -h  quick help on <cmd></cmd></cmd></li>
+<li>updating npm:npm install npm@latest -g</li>
+<li>npm -l display full usage info</li>
+<li>npm view   View registry info  aliases: info, show, v</li>
+<li>Patch releases: &#x8865;&#x4E01;&#x7248;&#x672C; </li>
+<li>Minor releases: &#x6B21;&#x7248;&#x672C;</li>
+<li>Major releases: &#x4E3B;&#x7248;&#x672C;<pre><code>Tags are a supplement to semver for organizing and labeling different versions of packages.
 &#x6807;&#x7B7E;&#x662F;&#x8BED;&#x4E49;&#x5316;&#x7248;&#x672C;&#x63A7;&#x5236;&#x89C4;&#x8303;&#x7684;&#x8865;&#x5145;&#xFF0C;&#x7528;&#x4E8E;&#x7EC4;&#x7EC7;&#x548C;&#x6807;&#x8BB0;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x5305;&#x3002;
 Semantic Versioning Specification (SemVer)&#x8BED;&#x4E49;&#x5316;&#x7248;&#x672C;&#x63A7;&#x5236;&#x89C4;&#x8303;
 npm dist-tag ls
-latest: 1.0.3</p>
-<pre><code>* npm unpublish [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]  Remove a package from the registry
-</code></pre><p>To publish, you must have a user on the npm registry. If you don&apos;t have one, create it with npm adduser. If you created one on the site, use npm login to store the credentials on the client.
-Use npm config ls to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to <a href="https://npmjs.com/~" target="_blank">https://npmjs.com/~</a>.
-npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
-Run this in a package directory to bump the version and write the new data back to package.json and, if present, npm-shrinkwrap.json.</newversion></p>
-<pre><code>* npm install&#x6216;npm update&#x547D;&#x4EE4;&#xFF0C;&#x4ECE; registry &#x4E0B;&#x8F7D;&#x538B;&#x7F29;&#x5305;&#x4E4B;&#x540E;&#xFF0C;&#x90FD;&#x5B58;&#x653E;&#x5728;&#x672C;&#x5730;&#x7684;&#x7F13;&#x5B58;&#x76EE;&#x5F55;&#x3002;
-</code></pre><p>npm &#x811A;&#x672C;&#x7684;&#x539F;&#x7406;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x6BCF;&#x5F53;&#x6267;&#x884C;npm run&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; Shell&#xFF0C;&#x5728;&#x8FD9;&#x4E2A; Shell &#x91CC;&#x9762;&#x6267;&#x884C;&#x6307;&#x5B9A;&#x7684;&#x811A;&#x672C;&#x547D;&#x4EE4;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x53EA;&#x8981;&#x662F; Shell&#xFF08;&#x4E00;&#x822C;&#x662F; Bash&#xFF09;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5199;&#x5728; npm &#x811A;&#x672C;&#x91CC;&#x9762;&#x3002;
+latest: 1.0.3
+</code></pre></li>
+<li>npm unpublish [&lt;@scope&gt;/]&lt;pkg&gt;[@<version>]  Remove a package from the registry<pre><code>To publish, you must have a user on the npm registry. If you don&apos;t have one, create it with npm adduser. If you created one on the site, use npm login to store the credentials on the client.
+Use npm config ls to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to https://npmjs.com/~.
+npm version [&lt;newversion&gt; | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
+Run this in a package directory to bump the version and write the new data back to package.json and, if present, npm-shrinkwrap.json.
+</code></pre></version></li>
+<li>npm install&#x6216;npm update&#x547D;&#x4EE4;&#xFF0C;&#x4ECE; registry &#x4E0B;&#x8F7D;&#x538B;&#x7F29;&#x5305;&#x4E4B;&#x540E;&#xFF0C;&#x90FD;&#x5B58;&#x653E;&#x5728;&#x672C;&#x5730;&#x7684;&#x7F13;&#x5B58;&#x76EE;&#x5F55;&#x3002;<pre><code>npm &#x811A;&#x672C;&#x7684;&#x539F;&#x7406;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x6BCF;&#x5F53;&#x6267;&#x884C;npm run&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; Shell&#xFF0C;&#x5728;&#x8FD9;&#x4E2A; Shell &#x91CC;&#x9762;&#x6267;&#x884C;&#x6307;&#x5B9A;&#x7684;&#x811A;&#x672C;&#x547D;&#x4EE4;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x53EA;&#x8981;&#x662F; Shell&#xFF08;&#x4E00;&#x822C;&#x662F; Bash&#xFF09;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5199;&#x5728; npm &#x811A;&#x672C;&#x91CC;&#x9762;&#x3002;
 &#x6BD4;&#x8F83;&#x7279;&#x522B;&#x7684;&#x662F;&#xFF0C;npm run&#x65B0;&#x5EFA;&#x7684;&#x8FD9;&#x4E2A; Shell&#xFF0C;&#x4F1A;&#x5C06;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x7684;node_modules/.bin&#x5B50;&#x76EE;&#x5F55;&#x52A0;&#x5165;PATH&#x53D8;&#x91CF;&#xFF0C;&#x6267;&#x884C;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x518D;&#x5C06;PATH&#x53D8;&#x91CF;&#x6062;&#x590D;&#x539F;&#x6837;&#x3002;
 npm run pwd -- &gt;pwd.txt
 &#x5411; npm &#x811A;&#x672C;&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF0C;&#x8981;&#x4F7F;&#x7528;--&#x6807;&#x660E;&#x3002;
@@ -960,12 +1002,10 @@ Print the effective node_modules folder to stan-dard out.
 tree -d node_modules
 npm find-dupes
 npm dedupe
-<a href="https://www.npmjs.com/~johnqing" target="_blank">https://www.npmjs.com/~johnqing</a>
-```</p>
-<ul>
+https://www.npmjs.com/~johnqing
+</code></pre></li>
 <li>&#x8BBE;&#x7F6E;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;npm config set prefix C:\Users\Administrator\AppData\Roaming\npm</li>
 </ul>
-</blockquote>
 
                                 
                                 </section>
@@ -1009,7 +1049,7 @@ npm dedupe
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NPM学习笔记","level":"1.3.1","depth":2,"next":{"title":"Git学习笔记","level":"1.3.2","depth":2,"path":"chapter2/Git.md","ref":"chapter2/Git.md","articles":[]},"previous":{"title":"工具","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[{"title":"NPM学习笔记","level":"1.3.1","depth":2,"path":"chapter2/NPM.md","ref":"chapter2/NPM.md","articles":[]},{"title":"Git学习笔记","level":"1.3.2","depth":2,"path":"chapter2/Git.md","ref":"chapter2/Git.md","articles":[]},{"title":"Webpack 4学习笔记","level":"1.3.3","depth":2,"path":"chapter2/WebPack.md","ref":"chapter2/WebPack.md","articles":[]},{"title":"Sublime编辑器","level":"1.3.4","depth":2,"path":"chapter2/SublimeTextPlugin.md","ref":"chapter2/SublimeTextPlugin.md","articles":[]},{"title":"GitBook使用笔记","level":"1.3.5","depth":2,"path":"chapter2/GitBook.md","ref":"chapter2/GitBook.md","articles":[]},{"title":"谷歌浏览器插件","level":"1.3.6","depth":2,"path":"chapter2/ChromePlugin.md","ref":"chapter2/ChromePlugin.md","articles":[]},{"title":"MarkdownCheatSheet","level":"1.3.7","depth":2,"path":"chapter2/MarkdownCheatSheet.md","ref":"chapter2/MarkdownCheatSheet.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/NPM.md","mtime":"2018-04-04T10:10:32.918Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-20T10:44:07.664Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NPM学习笔记","level":"1.3.1","depth":2,"next":{"title":"Git学习笔记","level":"1.3.2","depth":2,"path":"chapter2/Git.md","ref":"chapter2/Git.md","articles":[]},"previous":{"title":"工具","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[{"title":"NPM学习笔记","level":"1.3.1","depth":2,"path":"chapter2/NPM.md","ref":"chapter2/NPM.md","articles":[]},{"title":"Git学习笔记","level":"1.3.2","depth":2,"path":"chapter2/Git.md","ref":"chapter2/Git.md","articles":[]},{"title":"Webpack 4学习笔记","level":"1.3.3","depth":2,"path":"chapter2/WebPack.md","ref":"chapter2/WebPack.md","articles":[]},{"title":"Sublime编辑器","level":"1.3.4","depth":2,"path":"chapter2/SublimeTextPlugin.md","ref":"chapter2/SublimeTextPlugin.md","articles":[]},{"title":"GitBook使用笔记","level":"1.3.5","depth":2,"path":"chapter2/GitBook.md","ref":"chapter2/GitBook.md","articles":[]},{"title":"谷歌浏览器插件","level":"1.3.6","depth":2,"path":"chapter2/ChromePlugin.md","ref":"chapter2/ChromePlugin.md","articles":[]},{"title":"MarkdownCheatSheet","level":"1.3.7","depth":2,"path":"chapter2/MarkdownCheatSheet.md","ref":"chapter2/MarkdownCheatSheet.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/NPM.md","mtime":"2018-04-21T14:49:56.391Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-20T10:44:07.664Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

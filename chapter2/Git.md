@@ -63,6 +63,7 @@ To github.com:luojianet/git.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 * git push
+
 ```
 $ git push
 fatal: No configured push destination.
@@ -75,6 +76,7 @@ and then push using the remote name
     git push <name>
 ```
 * git push(have add origin)
+
 ```
 $ git push
 fatal: The current branch master has no upstream branch.
@@ -84,6 +86,7 @@ To push the current branch and set the remote as upstream, use
 ```
 # Commond Line
 * git config --global user.name 
+
 ```
 git log -5 --pretty="%h - %an %s"
 git log -5 --pretty --oneline
@@ -93,6 +96,7 @@ git config --list
 git config -l
 ```
 * git log --pretty=oneline -10
+
 ```
 $ git log --pretty=oneline -10
 a6e440676f10f200b0ebd13ef6b66255d45d7df4 (HEAD -> master, origin/master) git show #commit fileName
@@ -107,7 +111,8 @@ ae9e85fc1cc056f5871389e75b7b2976585cac10 verson1
 571e5ba0ac2efe45b8b48c48b242798d408cbb1e 为版本回退做准备
 ```
 * git show #commit fileName
-```sh
+
+```
 $ git show 23d90d5ab352761b875fe6c3959f9bd3086b7efc first.txt
 commit 23d90d5ab352761b875fe6c3959f9bd3086b7efc
 Author: luojianet <997948809@163.com>
@@ -125,7 +130,9 @@ index d8036c1..013b5bc 100644
  Git is free software.
 \ No newline at end of file
 ```
-* git reset --hard HEAD^|git reset --hard HEAD~
+
+* git reset --hard HEAD^\|git reset --hard HEAD~
+
 ```
 $ git reset --hard HEAD^
 HEAD is now at de1af27 version3
@@ -134,6 +141,7 @@ Administrator@yanhu MINGW64 /c/github/git (master)
 $ git reset --hard HEAD~
 HEAD is now at 23d90d5 version2
 ```
+
 * git diff origin/master -- README.md
 ```
 $ git diff origin/master -- README.md
@@ -153,7 +161,9 @@ index af6b8df..273b7f6 100644
 +* Git跟踪并管理的是修改，而非文件。你会问，什么是修改？比如你新增了一行，这就是一个修改，删除了一行，也是一个修改，更改了某些字符，也是一个修改，删了一些又加了一些，也是一个修改，甚至创建一个新文件，也算一个修改。
 \ No newline at end of file
 ```
+
 * 解决冲突
+
 ```
 git merge dev
 <<<<<<< HEAD
@@ -170,6 +180,7 @@ master 分支修改
 >>>>>>> master
 ```
 * git log --pretty=oneline --graph --abbrev-commit -10
+
 ```
 $ git log --graph --pretty=oneline --abbrev-commit -10
 * 70a3a94 (HEAD -> master, origin/master) git stash pop
@@ -191,6 +202,7 @@ $ git log --graph --pretty=oneline --abbrev-commit -10
 * 5c28fbe 禁用Fast forward
 ```
 * master分支提交点，**提交点**,左侧竖线是当前分支
+
 ```
 $ git log --pretty=oneline -20 --abbrev-commit --graph
 *   5d00a9f (HEAD -> master) 合并dev分支到master分支，解决README.md文件冲突
@@ -227,6 +239,7 @@ $ git log --pretty=oneline -20 --abbrev-commit --graph
 | * f2b00de dev
 ```
 * dev分支提交点**提交点**,左侧竖线是当前分支
+
 ```
 $ git log --pretty=oneline -20 --abbrev-commit --graph
 * 665cce2 (HEAD -> dev) 算数运算3*6
@@ -266,11 +279,13 @@ $ git log --pretty=oneline -20 --abbrev-commit --graph
 * 7b53b0a ff
 ```
 * git stash
+
 ```
 $ git stash
 Saved working directory and index state WIP on dev: 5aeaf69 应用某个stash
 ```
 * git stash pop
+
 ```
 $ git stash pop
 On branch dev
@@ -283,6 +298,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 Dropped refs/stash@{0} (1abc634d2849eb858d6a30d6a4ab353758d782fa)
 ```
+
 # 笔记
 * git init本地初始化一个版本库
 * 如果嫌输出信息太多，看得眼花缭乱的，可以试试加上`--pretty=oneline`参数
