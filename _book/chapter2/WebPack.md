@@ -416,7 +416,8 @@ Options:
   "es5-shim": "^4.5.10",
   "jquery": "^1.12.4",
   "underscore": "^1.8.3",
-  "zepto": "^1.2.0"
+  "zepto": "^1.2.0",
+  "promise-polyfill": "^7.1.2"
 }
 ```
 # 笔记
