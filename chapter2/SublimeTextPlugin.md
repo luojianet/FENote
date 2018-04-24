@@ -41,6 +41,7 @@ E36B85CC 84991F19 7575D828 470A92AB
 * BracketHighlighter
 * Markdown Preview
 * Alignment
+* HTML-CSS-JS Prettify
 ```
 快捷键 CTRL+ALT+A
 ```
