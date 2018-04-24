@@ -40,8 +40,46 @@ E36B85CC 84991F19 7575D828 470A92AB
 * SublimeCodeIntel
 * BracketHighlighter
 * Markdown Preview
-* Alignment
 * HTML-CSS-JS Prettify
+
+```
+1.Usage
+Tools -> Command Palette (Cmd+Shift+P or Ctrl+Shift+P) and type htmlprettify.
+– or –
+Ctrl+Shift+H (or Cmd+Shift+H if you're on a Mac).
+– or –
+Right click in the current buffer and select HTML/CSS/JS Prettify -> Prettify Code.
+– or –
+Open a HTML, CSS or JavaScript file, pop out the console in Sublime Text from View -> Show Console, and type view.run_command("htmlprettify").
+Writing commands in the console is ugly. Set up your own key combo for this, by going to Preferences -> Key Bindings - User, and adding a command in that array: { "keys": ["super+shift+h"], "command": "htmlprettify" }. You can use any other command you want, thought most of them are already taken.
+
+2.Beautify on Save
+To beautify your code when saving the document, set the `format_on_save` setting to `true` in HTMLPrettify.sublime-settings:
+Ctrl+Shift+P or Cmd+Shift+P in Linux/Windows/OS X
+type htmlprettify, select Set Plugin Options
+
+3.Beautify while editing
+To beautify your code when while editing a document, set the `format_while_editing` setting to `true` in HTMLPrettify.sublime-settings.
+
+4.Ignoring certain files
+To add ignore rules use disallowed_file_patterns in HTMLPrettify.sublime-settings, under the global_file_rules setting. If the file (including path) matches any of the regexp patterns defined in disallowed_file_patterns it will not be beautified.
+The following apply regardless of the use_editor_syntax setting's value:
+{
+  "html": {
+    "disallowed_file_patterns": ["myFileToSkip\\.html", "myFolderToSkip"]
+  },
+  "css": {
+    "disallowed_file_patterns": ["myFileToSkip\\.css", "myFolderToSkip"]
+  },
+  "js": {
+    "disallowed_file_patterns": ["myFileToSkip\\.js", "myFolderToSkip"]
+  },
+  "json": {
+    "disallowed_file_patterns": ["myFileToSkip\\.json", "myFolderToSkip"]
+  }
+}
+```
+* Alignment
 ```
 快捷键 CTRL+ALT+A
 ```

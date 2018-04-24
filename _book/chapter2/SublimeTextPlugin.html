@@ -328,8 +328,45 @@ E36B85CC 84991F19 7575D828 470A92AB
 <li>SublimeCodeIntel</li>
 <li>BracketHighlighter</li>
 <li>Markdown Preview</li>
-<li>Alignment</li>
-<li>HTML-CSS-JS Prettify<pre><code>&#x5FEB;&#x6377;&#x952E; CTRL+ALT+A
+<li>HTML-CSS-JS Prettify</li>
+</ul>
+<pre><code>1.Usage
+Tools -&gt; Command Palette (Cmd+Shift+P or Ctrl+Shift+P) and type htmlprettify.
+&#x2013; or &#x2013;
+Ctrl+Shift+H (or Cmd+Shift+H if you&apos;re on a Mac).
+&#x2013; or &#x2013;
+Right click in the current buffer and select HTML/CSS/JS Prettify -&gt; Prettify Code.
+&#x2013; or &#x2013;
+Open a HTML, CSS or JavaScript file, pop out the console in Sublime Text from View -&gt; Show Console, and type view.run_command(&quot;htmlprettify&quot;).
+Writing commands in the console is ugly. Set up your own key combo for this, by going to Preferences -&gt; Key Bindings - User, and adding a command in that array: { &quot;keys&quot;: [&quot;super+shift+h&quot;], &quot;command&quot;: &quot;htmlprettify&quot; }. You can use any other command you want, thought most of them are already taken.
+
+2.Beautify on Save
+To beautify your code when saving the document, set the `format_on_save` setting to `true` in HTMLPrettify.sublime-settings:
+Ctrl+Shift+P or Cmd+Shift+P in Linux/Windows/OS X
+type htmlprettify, select Set Plugin Options
+
+3.Beautify while editing
+To beautify your code when while editing a document, set the `format_while_editing` setting to `true` in HTMLPrettify.sublime-settings.
+
+4.Ignoring certain files
+To add ignore rules use disallowed_file_patterns in HTMLPrettify.sublime-settings, under the global_file_rules setting. If the file (including path) matches any of the regexp patterns defined in disallowed_file_patterns it will not be beautified.
+The following apply regardless of the use_editor_syntax setting&apos;s value:
+{
+  &quot;html&quot;: {
+    &quot;disallowed_file_patterns&quot;: [&quot;myFileToSkip\\.html&quot;, &quot;myFolderToSkip&quot;]
+  },
+  &quot;css&quot;: {
+    &quot;disallowed_file_patterns&quot;: [&quot;myFileToSkip\\.css&quot;, &quot;myFolderToSkip&quot;]
+  },
+  &quot;js&quot;: {
+    &quot;disallowed_file_patterns&quot;: [&quot;myFileToSkip\\.js&quot;, &quot;myFolderToSkip&quot;]
+  },
+  &quot;json&quot;: {
+    &quot;disallowed_file_patterns&quot;: [&quot;myFileToSkip\\.json&quot;, &quot;myFolderToSkip&quot;]
+  }
+}
+</code></pre><ul>
+<li>Alignment<pre><code>&#x5FEB;&#x6377;&#x952E; CTRL+ALT+A
 </code></pre></li>
 <li>HTMLBeautify<pre><code>&#x5FEB;&#x6377;&#x952E; CTRL+ALT+SHIFT+F
 </code></pre></li>
@@ -397,7 +434,7 @@ exts - &#x542F;&#x7528;&#x6B64;&#x63D2;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x7C7B;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sublime编辑器","level":"1.3.4","depth":2,"next":{"title":"GitBook使用笔记","level":"1.3.5","depth":2,"path":"chapter2/GitBook.md","ref":"chapter2/GitBook.md","articles":[]},"previous":{"title":"Webpack 4学习笔记","level":"1.3.3","depth":2,"path":"chapter2/WebPack.md","ref":"chapter2/WebPack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/SublimeTextPlugin.md","mtime":"2018-04-24T08:45:08.832Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-24T08:45:43.863Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sublime编辑器","level":"1.3.4","depth":2,"next":{"title":"GitBook使用笔记","level":"1.3.5","depth":2,"path":"chapter2/GitBook.md","ref":"chapter2/GitBook.md","articles":[]},"previous":{"title":"Webpack 4学习笔记","level":"1.3.3","depth":2,"path":"chapter2/WebPack.md","ref":"chapter2/WebPack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/SublimeTextPlugin.md","mtime":"2018-04-24T09:04:26.985Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-24T09:04:36.402Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
