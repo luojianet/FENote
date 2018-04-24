@@ -40,6 +40,15 @@ E36B85CC 84991F19 7575D828 470A92AB
 * SublimeCodeIntel
 * BracketHighlighter
 * Markdown Preview
+
+```
+Use the shortcut Ctrl＋Shift＋P then select MarkdownPreview to show the follow commands (you will be prompted to select which parser you prefer):
+
+Markdown Preview: Preview in Browser
+Markdown Preview: Export HTML in Sublime Text
+Markdown Preview: Copy to Clipboard
+Markdown Preview: Open Markdown Cheat sheet
+```
 * HTML-CSS-JS Prettify
 
 ```
