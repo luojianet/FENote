@@ -1,16 +1,9 @@
-# NodeJS
-A repository about learn nodejs
-
 # NodeJS httpServer.js
-企业网站演示：`node httpServer.js 2018/201803/20180308/20141202001`
-# module arguments
-* exports
-* require
-* module
-* \_\_filename：module变量，存储的是文件名
-* \_\_dirname：module变量，存储的是文件所在的文件目录
-# [模块包装器](http://nodejs.cn/api/modules.html#modules_the_module_wrapper)
-在执行模块代码之前，Node.js 会使用一个如下的函数包装器将其包装：
+* [仓库地址](https://github.com/luojianet/NodeJS)
+* 企业网站演示：`node httpServer.js 2018/201803/20180308/20141202001`
+
+# 模块包装器
+在执行模块代码之前，Node.js 会使用一个如下的[函数包装器](http://nodejs.cn/api/modules.html#modules_the_module_wrapper)将其包装：
 ```js
 (function(exports, require, module, __filename, __dirname) {
 // 模块的代码实际上在这里
@@ -21,6 +14,7 @@ A repository about learn nodejs
 * 它有助于提供一些看似全局的但实际上是模块特定的变量，例如：
 	* 实现者可以用于从模块中导出值的 `module` 和 `exports` 对象。
 	* 包含模块绝对文件名和目录路径的快捷变量 `__filename` 和 `__dirname` 。
+
 # 学习列表
 * [廖雪峰NodeJS教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143450141843488beddae2a1044cab5acb5125baf0882000)
 * [API 文档 | Node.js 中文网](http://nodejs.cn/api/)
@@ -32,8 +26,10 @@ A repository about learn nodejs
 * [async 函数 - ECMAScript 6入门](http://es6.ruanyifeng.com/#docs/async)
 * [Promise 对象 - ECMAScript 6入门](http://es6.ruanyifeng.com/#docs/promise)
 * [Module 的语法 - ECMAScript 6入门](http://es6.ruanyifeng.com/#docs/module)
+
 # 笔记
 * ES6模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS和AMD模块，都只能在运行时确定这些东西。 
+
 # 待解决问题
 * 旧版本mime.lookup(pathname)
 * 新版本mime.getType(pathname)
