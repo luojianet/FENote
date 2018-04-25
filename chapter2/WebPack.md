@@ -104,59 +104,60 @@ npm ERR! peer dep missing: ajv@^6.0.0, required by ajv-keywords@3.1.0
 # webpack.config.js文件module字段的4种写法
 ```
 var obj = {
-	module_1: {//多模块不需要配置
-		rules: [{
-			test: /\.css$/,
-			use: ["style-loader", "css-loader"]
-		}]
-	},
-	module_2: {//单模块需要配置
-		rules: [{
-			test: /\.css$/,
-			loader: "css-loader",
-			options: {
-				minimize:true,
-				sourceMap: true
-			}
-		}]
-	},
-	module_3: {//多模块需要配置
-		rules: [{
-			test: /\.css$/,
-			use: [{
-				loader: "style-loader",
-				options: {
-					attrs:{
-						title:"gogo",
-						class:"styleForSelector"
-					},
-					insertAt:{
-						before:'#title'
-					},//'top', 'bottom', or Object.
-					singleton: true
-				}
-			}, {
-				loader: "css-loader",
-				options: {
-					minimize:false,
-					sourceMap: true
-				}
-			}]
-		}]
-	},module_4: {//多模块需要配置
-		rules: [{
-			test: /\.css$/,
-			use: [
-				"style-loader",
-				{
-					loader: "css-loader",
-					options: {
-						minimize:true
-					}
-				}
-			]
-		}]
-	}
+    module_1: { //多模块不需要配置
+        rules: [{
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"]
+        }]
+    },
+    module_2: { //单模块需要配置
+        rules: [{
+            test: /\.css$/,
+            loader: "css-loader",
+            options: {
+                minimize: true,
+                sourceMap: true
+            }
+        }]
+    },
+    module_3: { //多模块需要配置
+        rules: [{
+            test: /\.css$/,
+            use: [{
+                loader: "style-loader",
+                options: {
+                    attrs: {
+                        title: "gogo",
+                        class: "styleForSelector"
+                    },
+                    insertAt: {
+                        before: '#title'
+                    }, //'top', 'bottom', or Object.
+                    singleton: true
+                }
+            }, {
+                loader: "css-loader",
+                options: {
+                    minimize: false,
+                    sourceMap: true
+                }
+            }]
+        }]
+    },
+    module_4: { //多模块需要配置
+        rules: [{
+            test: /\.css$/,
+            use: [
+                "style-loader",
+                {
+                    loader: "css-loader",
+                    options: {
+                        minimize: true
+                    }
+                }
+            ]
+        }]
+    }
 }
 ```
 # NODE_ENV=production 环境变量设置
