@@ -1,11 +1,10 @@
-# what's npm
-npm is the package manager for javascript
 # Installing npm
 The npm command-line tool is bundled with Node.js. If you have it installed, then you already have npm. If not, download Node.js below:	[Download Node.js](https://nodejs.org/en/download/)
 # Documentation & screencasts
 We've got a docs site featuring videos and tutorials to help you make your javascript dreams come true. Head on over to the docs site:	[View the Docs](https://docs.npmjs.com/)
 # Study List
 * [npm Documentation](https://docs.npmjs.com/)
+
 # 注册用户和用户登录
 * npm adduser
 ```

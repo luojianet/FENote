@@ -11,7 +11,8 @@ Webpack is a bundler for javascript and friends. Packs many modules into a few b
 * [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
 * [Production](https://webpack.js.org/guides/production/)
 * [Code Splitting](https://webpack.js.org/guides/code-splitting/)
-## 文章学习列表
+
+# 文章学习列表
 * [使用 webpack 定制前端开发环境](https://juejin.im/book/5a6abad5518825733c144469)
 ```
 基于 4.x 版本，从细节和深度上弄懂 webpack，随心所欲定制前端开发环境
@@ -20,6 +21,7 @@ teabyii 前支付宝前端开发，现唯品会高级开发
 * [webpack 4.0.0-beta.0 新特性介绍](http://ju.outofmemory.cn/entry/343762)
 * [webpack 4 发布了！](https://zhuanlan.zhihu.com/p/34028750)
 * [splitChunksPlugin && runtimeChunkPlugin 配置杂记](https://www.cnblogs.com/ufex/p/8758792.html)
+
 # webpack打包形式
 * webpack
 * webpack src/index.js --output dist/bundle.js

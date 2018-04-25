@@ -1,4 +1,4 @@
-## 常用Chrome插件
+# 常用Chrome插件
 
 - [jQuery Injector](https://chrome.google.com/webstore/detail/jquery-injector/eieagggkalkamgcjienaonbokfipcdef)
 - [简单 QR 生成器](https://chrome.google.com/webstore/detail/%E7%AE%80%E5%8D%95-qr-%E7%94%9F%E6%88%90%E5%99%A8/ajaomcmkalmeeahjfdklkcjbljhbokjl)
