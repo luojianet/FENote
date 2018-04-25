@@ -17,15 +17,19 @@ E36B85CC 84991F19 7575D828 470A92AB
 # 个性化设置Preferences->Settings
 ```
 {
-	"folder_exclude_patterns":
+  "folder_exclude_patterns":
 	[
-		".svn",
-		".git",
-		".hg",
-		"CVS",
-		"node_modules",
-		"bower_components"
-	]
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "node_modules",
+    "bower_components"
+	],
+  "file_exclude_patterns": 
+  [
+    "package-lock.json"
+  ]
 }
 ```
 # Sublime Plugin
