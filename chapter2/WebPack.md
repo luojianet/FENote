@@ -209,8 +209,7 @@ new webpack.DefinePlugin({
 ```        
 
 # webpack参数列表
-<details>
-<summary>webpack-cli 2.0.14</summary>
+* npx webpack --help
 ```
 $ npx webpack --help
 npx: installed 1 in 2.868s
@@ -369,7 +368,6 @@ Options:
   --silent       Prevent output from being displayed in stdout         [boolean]
   --json, -j     Prints the result as JSON.                            [boolean]
 ```
-</details>
 # webpack常用参数
 * --help
 * --version
