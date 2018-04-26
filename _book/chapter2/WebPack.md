@@ -21,6 +21,7 @@ teabyii 前支付宝前端开发，现唯品会高级开发
 * [webpack 4.0.0-beta.0 新特性介绍](http://ju.outofmemory.cn/entry/343762)
 * [webpack 4 发布了！](https://zhuanlan.zhihu.com/p/34028750)
 * [splitChunksPlugin && runtimeChunkPlugin 配置杂记](https://www.cnblogs.com/ufex/p/8758792.html)
+* [webpack实例](https://github.com/webpack/webpack/tree/master/examples)
 
 # webpack打包形式
 * webpack
@@ -208,7 +209,8 @@ new webpack.DefinePlugin({
 ```        
 
 # webpack参数列表
-
+<details>
+<summary>webpack-cli 2.0.14</summary>
 ```
 $ npx webpack --help
 npx: installed 1 in 2.868s
@@ -367,7 +369,7 @@ Options:
   --silent       Prevent output from being displayed in stdout         [boolean]
   --json, -j     Prints the result as JSON.                            [boolean]
 ```
-
+</details>
 # webpack常用参数
 * --help
 * --version
