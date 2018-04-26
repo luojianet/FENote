@@ -477,19 +477,21 @@ set NODE_ENV=production &amp;&amp; node env.js
 </ul>
 <h1 id="webpack&#x53C2;&#x6570;&#x5217;&#x8868;">webpack&#x53C2;&#x6570;&#x5217;&#x8868;</h1>
 <ul>
-<li>npx webpack --help
-```
-$ npx webpack --help
+<li>npx webpack --help</li>
+</ul>
+<pre><code>$ npx webpack --help
 npx: installed 1 in 2.868s
 Path must be a string. Received undefined
 C:\html\www.yanhu.com\201804\20180404\node_modules\webpack\bin\webpack.js
-webpack-cli 2.0.14</li>
-</ul>
-<p>Usage: webpack-cli [options]
-       webpack-cli [options] --entry <entry> --output <output>
-       webpack-cli [options] <entries...> --output <output></output></entries...></output></entry></p>
-<p>For more information, see <a href="https://webpack.js.org/api/cli/" target="_blank">https://webpack.js.org/api/cli/</a>.</p>
-<p>Initialization:
+webpack-cli 2.0.14
+
+Usage: webpack-cli [options]
+       webpack-cli [options] --entry &lt;entry&gt; --output &lt;output&gt;
+       webpack-cli [options] &lt;entries...&gt; --output &lt;output&gt;
+
+For more information, see https://webpack.js.org/api/cli/.
+
+Initialization:
   --init             Initializes a new webpack configuration or loads a
                      addon if specified                                [boolean]
   --migrate          Migrate your webpack configuration from webpack 1 to
@@ -497,8 +499,9 @@ webpack-cli 2.0.14</li>
   --add              Adds a webpack component to your configuration file
                                                                        [boolean]
   --generate-loader  Generates a new webpack loader project            [boolean]
-  --generate-plugin  Generates a new webpack plugin project            [boolean]</p>
-<p>Config options:
+  --generate-plugin  Generates a new webpack plugin project            [boolean]
+
+Config options:
   --config               Path to the config file
                          [string] [default: webpack.config.js or webpackfile.js]
   --config-register, -r  Preload one or more modules before loading the webpack
@@ -506,8 +509,9 @@ webpack-cli 2.0.14</li>
   --config-name          Name of the config to use                      [string]
   --env                  Environment passed to the config, when it is a function
   --mode                 Mode to use
-                                 [string] [choices: &quot;development&quot;, &quot;production&quot;]</p>
-<p>Basic options:
+                                 [string] [choices: &quot;development&quot;, &quot;production&quot;]
+
+Basic options:
   --context    The root directory for resolving entry point and stats
                                        [string] [default: The current directory]
   --entry      The entry point                                          [string]
@@ -519,12 +523,14 @@ webpack-cli 2.0.14</li>
                --output-pathinfo                                       [boolean]
   -p           shortcut for --optimize-minimize --define
                process.env.NODE_ENV=&quot;production&quot;                       [boolean]
-  --progress   Print compilation progress in percentage                [boolean]</p>
-<p>Module options:
+  --progress   Print compilation progress in percentage                [boolean]
+
+Module options:
   --module-bind       Bind an extension to a loader                     [string]
   --module-bind-post  Bind an extension to a post loader                [string]
-  --module-bind-pre   Bind an extension to a pre loader                 [string]</p>
-<p>Output options:
+  --module-bind-pre   Bind an extension to a pre loader                 [string]
+
+Output options:
   --output, -o                  The output path and file for compilation assets
   --output-path                 The output path for compilation assets
                                        [string] [default: The current directory]
@@ -541,8 +547,9 @@ webpack-cli 2.0.14</li>
   --output-library              Expose the exports of the entry point as library
                                                                         [string]
   --output-library-target       The type for exposing the exports of the entry
-                                point as library                        [string]</p>
-<p>Advanced options:
+                                point as library                        [string]
+
+Advanced options:
   --records-input-path       Path to the records file (reading)         [string]
   --records-output-path      Path to the records file (writing)         [string]
   --records-path             Path to the records file                   [string]
@@ -564,20 +571,23 @@ webpack-cli 2.0.14</li>
   --bail                     Abort the compilation on first error
                                                        [boolean] [default: null]
   --profile                  Profile the compilation and include information in
-                             stats                     [boolean] [default: null]</p>
-<p>Resolving options:
+                             stats                     [boolean] [default: null]
+
+Resolving options:
   --resolve-alias         Setup a module alias for resolving (Example:
                           jquery-plugin=jquery.plugin)                  [string]
   --resolve-extensions    Setup extensions that should be used to resolve
                           modules (Example: --resolve-extensions .es6,.js)
                                                                          [array]
-  --resolve-loader-alias  Setup a loader alias for resolving            [string]</p>
-<p>Optimizing options:
+  --resolve-loader-alias  Setup a loader alias for resolving            [string]
+
+Optimizing options:
   --optimize-max-chunks      Try to keep the chunk count below a limit
   --optimize-min-chunk-size  Try to keep the chunk size above a limit
   --optimize-minimize        Minimize javascript and switches loaders to
-                             minimizing                                [boolean]</p>
-<p>Stats options:
+                             minimizing                                [boolean]
+
+Stats options:
   --color, --colors               Enables/Disables colors on the console
                                            [boolean] [default: (supports-color)]
   --sort-modules-by               Sorts the modules list by property in module
@@ -618,29 +628,31 @@ webpack-cli 2.0.14</li>
   --info-verbosity                Controls the output of lifecycle messaging
                                   e.g. Started watching files...
                  [string] [choices: &quot;none&quot;, &quot;info&quot;, &quot;verbose&quot;] [default: &quot;info&quot;]
-  --build-delimiter               Display custom text after build output[string]</p>
-<p>Options:
+  --build-delimiter               Display custom text after build output[string]
+
+Options:
   --help, -h     Show help                                             [boolean]
   --version, -v  Show version number                                   [boolean]
   --silent       Prevent output from being displayed in stdout         [boolean]
-  --json, -j     Prints the result as JSON.                            [boolean]</p>
-<pre><code># webpack&#x5E38;&#x7528;&#x53C2;&#x6570;
-* --help
-* --version
-* --progress 
-* --module-bind &apos;txt=raw-loader&apos;
-* --devtool inline-cheap-source-map
-* --display-modules 
-* --mode=production
-* --color
-* --watch
-* --verbose
-* --json &gt; stats.json
-* --env.production    # &#x8BBE;&#x7F6E; env.production == true
-* --env.platform=web  # &#x8BBE;&#x7F6E; env.platform == &quot;web&quot;
-
-# &#x5B66;&#x4E60;webpack 4&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x5217;&#x8868;
-</code></pre><p>&quot;devDependencies&quot;: {
+  --json, -j     Prints the result as JSON.                            [boolean]
+</code></pre><h1 id="webpack&#x5E38;&#x7528;&#x53C2;&#x6570;">webpack&#x5E38;&#x7528;&#x53C2;&#x6570;</h1>
+<ul>
+<li>--help</li>
+<li>--version</li>
+<li>--progress </li>
+<li>--module-bind &apos;txt=raw-loader&apos;</li>
+<li>--devtool inline-cheap-source-map</li>
+<li>--display-modules </li>
+<li>--mode=production</li>
+<li>--color</li>
+<li>--watch</li>
+<li>--verbose</li>
+<li>--json &gt; stats.json</li>
+<li>--env.production    # &#x8BBE;&#x7F6E; env.production == true</li>
+<li>--env.platform=web  # &#x8BBE;&#x7F6E; env.platform == &quot;web&quot;</li>
+</ul>
+<h1 id="&#x5B66;&#x4E60;webpack-4&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x5217;&#x8868;">&#x5B66;&#x4E60;webpack 4&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x5217;&#x8868;</h1>
+<pre><code>&quot;devDependencies&quot;: {
   &quot;webpack&quot;: &quot;^4.2.0&quot;,
   &quot;webpack-cli&quot;: &quot;^2.0.12&quot;,
   &quot;webpack-dev-server&quot;: &quot;^3.1.3&quot;,
@@ -676,47 +688,50 @@ webpack-cli 2.0.14</li>
   &quot;underscore&quot;: &quot;^1.8.3&quot;,
   &quot;zepto&quot;: &quot;^1.2.0&quot;,
   &quot;promise-polyfill&quot;: &quot;^7.1.2&quot;
-}</p>
-<pre><code># &#x7B14;&#x8BB0;
-* node httpServer.js webpack-demo/ &#x53EF;&#x4EE5;&#x5BF9;&#x5177;&#x4F53;&#x76EE;&#x5F55;&#x542F;&#x52A8;&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;
-* npx http-server webpack-demo/ &#x53EF;&#x4EE5;&#x5BF9;&#x5177;&#x4F53;&#x76EE;&#x5F55;&#x542F;&#x52A8;&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;
-* We also need to adjust our package.json file in order to make sure we mark our package as private, as well as removing the main entry. This is to prevent an accidental publish of your code.
-* &#x9879;&#x76EE;&#x4EE3;&#x7801;&#x4F9D;&#x8D56;npm install --save&#xFF0C;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F9D;&#x8D56;npm insatll --save-dev
-* When installing a package that will be bundled into your production bundle, you should use `npm install --save`. If you&apos;re installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use `npm install --save-dev`.
-* Webpack is used to compile JavaScript modules.Webpack is A bundler for javascript.
-* To run the local installation of webpack you can access its bin version as `node_modules/.bin/webpack`
-* &#x4E0D;&#x63A8;&#x8350;&#x5168;&#x5C40;&#x5B89;&#x88C5; webpack&#x3002;&#x8FD9;&#x4F1A;&#x5C06;&#x4F60;&#x9879;&#x76EE;&#x4E2D;&#x7684; webpack &#x9501;&#x5B9A;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684; webpack &#x7248;&#x672C;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6784;&#x5EFA;&#x5931;&#x8D25;&#x3002;
-* Note that this is `not a recommended practice`. Installing globally locks you down to a specific version of webpack and could fail in projects that use a different version.
-* [webpack&#x6253;&#x5305;&#x5F62;&#x5F0F;](#webpack&#x6253;&#x5305;&#x5F62;&#x5F0F;)&#x524D;&#x56DB;&#x4E2A;&#x9700;&#x8981;&#x5168;&#x5C40;&#x5B89;&#x88C5;`webpack`&#xFF0C;`webpack-cli`.
-* Loaders can be chained by passing multiple loaders, which will be applied from right to left (last to first configured).
-* WARNING in configuration:The &apos;mode&apos; option has not been set. Set &apos;mode&apos; option to &apos;development&apos; or &apos;production&apos; to enable defaults for this environment.You can also set it to &apos;none&apos; to disable any default behavior. Learn more: https://webpack.js.org
-* Note that webpack will not alter any code other than `import` and `export` statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel or Bubl&#xE9; via webpack&apos;s loader system.
-* If a `webpack.config.js` is present, the `webpack` command picks it up by default. We use the `--config` option here only to show that you can pass a config of any name. This will be useful for more complex configurations that need to be split into multiple files.
-* &#x5982;&#x679C;webpack.config.js&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8BE5;webpack&#x547D;&#x4EE4;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x5B83;&#x3002;&#x6211;&#x4EEC;&#x5728;--config&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x8868;&#x660E;&#x4F60;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x540D;&#x5B57;&#x7684;&#x914D;&#x7F6E;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x62C6;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x66F4;&#x590D;&#x6742;&#x7684;&#x914D;&#x7F6E;&#x5F88;&#x6709;&#x7528;&#x3002;
-* &#x901A;&#x8FC7;&#x5411; `npm run build` &#x547D;&#x4EE4;&#x548C;&#x4F60;&#x7684;&#x53C2;&#x6570;&#x4E4B;&#x95F4;&#x6DFB;&#x52A0;&#x4E24;&#x4E2A;&#x4E2D;&#x6A2A;&#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; webpack&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;`npm run build -- --colors`&#x3002;
-* &#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F; npm 5&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x8FD8;&#x4F1A;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x770B;&#x5230;&#x4E00;&#x4E2A; package-lock.json &#x6587;&#x4EF6;&#x3002;
-* &#x4F60;&#x53EF;&#x4EE5;&#x6307;&#x793A; webpack &quot;watch&quot; &#x4F9D;&#x8D56;&#x56FE;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4EE5;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x3002;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x4EE3;&#x7801;&#x5C06;&#x88AB;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4E0D;&#x5FC5;&#x624B;&#x52A8;&#x8FD0;&#x884C;&#x6574;&#x4E2A;&#x6784;&#x5EFA;&#x3002;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x542F;&#x52A8; webpack &#x7684;&#x89C2;&#x5BDF;&#x6A21;&#x5F0F;&#x7684; npm script &#x811A;&#x672C;&#xFF1A;`&quot;watch&quot;: &quot;webpack --watch --color&quot;`&#x3002;
-* Simple rule: one entry point per HTML page. SPA: one entry point, MPA: multiple entry points.
-* You can specify an entry point (or multiple entry points) by configuring the `entry` property in the webpack configuration. It defaults to `./src`.
-* loader&#x5C5E;&#x6027;&#x7684;&#x7B49;&#x4EF7;&#x5199;&#x6CD5;
-</code></pre><p>{
-    test: /.jpeg$/,
-    use: [{
-        loader: &apos;url-loader&apos;,
-        options: {
-            limit: &apos;1024&apos;
-        }
-    }, ]
-}</p>
-<pre><code>
-
-</code></pre><p>{
-    test: /.jpeg$/,
+}
+</code></pre><h1 id="&#x7B14;&#x8BB0;">&#x7B14;&#x8BB0;</h1>
+<ul>
+<li>node httpServer.js webpack-demo/ &#x53EF;&#x4EE5;&#x5BF9;&#x5177;&#x4F53;&#x76EE;&#x5F55;&#x542F;&#x52A8;&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;</li>
+<li>npx http-server webpack-demo/ &#x53EF;&#x4EE5;&#x5BF9;&#x5177;&#x4F53;&#x76EE;&#x5F55;&#x542F;&#x52A8;&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;</li>
+<li>We also need to adjust our package.json file in order to make sure we mark our package as private, as well as removing the main entry. This is to prevent an accidental publish of your code.</li>
+<li>&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x4F9D;&#x8D56;npm install --save&#xFF0C;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F9D;&#x8D56;npm insatll --save-dev</li>
+<li>When installing a package that will be bundled into your production bundle, you should use <code>npm install --save</code>. If you&apos;re installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use <code>npm install --save-dev</code>.</li>
+<li>Webpack is used to compile JavaScript modules.Webpack is A bundler for javascript.</li>
+<li>To run the local installation of webpack you can access its bin version as <code>node_modules/.bin/webpack</code></li>
+<li>&#x4E0D;&#x63A8;&#x8350;&#x5168;&#x5C40;&#x5B89;&#x88C5; webpack&#x3002;&#x8FD9;&#x4F1A;&#x5C06;&#x4F60;&#x9879;&#x76EE;&#x4E2D;&#x7684; webpack &#x9501;&#x5B9A;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684; webpack &#x7248;&#x672C;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6784;&#x5EFA;&#x5931;&#x8D25;&#x3002;</li>
+<li>Note that this is <code>not a recommended practice</code>. Installing globally locks you down to a specific version of webpack and could fail in projects that use a different version.</li>
+<li><a href="#webpack&#x6253;&#x5305;&#x5F62;&#x5F0F;">webpack&#x6253;&#x5305;&#x5F62;&#x5F0F;</a>&#x524D;&#x56DB;&#x4E2A;&#x9700;&#x8981;&#x5168;&#x5C40;&#x5B89;&#x88C5;<code>webpack</code>&#xFF0C;<code>webpack-cli</code>.</li>
+<li>Loaders can be chained by passing multiple loaders, which will be applied from right to left (last to first configured).</li>
+<li>WARNING in configuration:The &apos;mode&apos; option has not been set. Set &apos;mode&apos; option to &apos;development&apos; or &apos;production&apos; to enable defaults for this environment.You can also set it to &apos;none&apos; to disable any default behavior. Learn more: <a href="https://webpack.js.org" target="_blank">https://webpack.js.org</a></li>
+<li>Note that webpack will not alter any code other than <code>import</code> and <code>export</code> statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel or Bubl&#xE9; via webpack&apos;s loader system.</li>
+<li>If a <code>webpack.config.js</code> is present, the <code>webpack</code> command picks it up by default. We use the <code>--config</code> option here only to show that you can pass a config of any name. This will be useful for more complex configurations that need to be split into multiple files.</li>
+<li>&#x5982;&#x679C;webpack.config.js&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8BE5;webpack&#x547D;&#x4EE4;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x5B83;&#x3002;&#x6211;&#x4EEC;&#x5728;--config&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x8868;&#x660E;&#x4F60;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x540D;&#x5B57;&#x7684;&#x914D;&#x7F6E;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x62C6;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x66F4;&#x590D;&#x6742;&#x7684;&#x914D;&#x7F6E;&#x5F88;&#x6709;&#x7528;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x5411; <code>npm run build</code> &#x547D;&#x4EE4;&#x548C;&#x4F60;&#x7684;&#x53C2;&#x6570;&#x4E4B;&#x95F4;&#x6DFB;&#x52A0;&#x4E24;&#x4E2A;&#x4E2D;&#x6A2A;&#x7EBF;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; webpack&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>npm run build -- --colors</code>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F; npm 5&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x8FD8;&#x4F1A;&#x5728;&#x76EE;&#x5F55;&#x4E2D;&#x770B;&#x5230;&#x4E00;&#x4E2A; package-lock.json &#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x4F60;&#x53EF;&#x4EE5;&#x6307;&#x793A; webpack &quot;watch&quot; &#x4F9D;&#x8D56;&#x56FE;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4EE5;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x3002;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x4EE3;&#x7801;&#x5C06;&#x88AB;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4E0D;&#x5FC5;&#x624B;&#x52A8;&#x8FD0;&#x884C;&#x6574;&#x4E2A;&#x6784;&#x5EFA;&#x3002;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x542F;&#x52A8; webpack &#x7684;&#x89C2;&#x5BDF;&#x6A21;&#x5F0F;&#x7684; npm script &#x811A;&#x672C;&#xFF1A;<code>&quot;watch&quot;: &quot;webpack --watch --color&quot;</code>&#x3002;</li>
+<li>Simple rule: one entry point per HTML page. SPA: one entry point, MPA: multiple entry points.</li>
+<li>You can specify an entry point (or multiple entry points) by configuring the <code>entry</code> property in the webpack configuration. It defaults to <code>./src</code>.</li>
+<li>loader&#x5C5E;&#x6027;&#x7684;&#x7B49;&#x4EF7;&#x5199;&#x6CD5;<pre><code>{
+  test: /\.jpeg$/,
+  use: [{
+      loader: &apos;url-loader&apos;,
+      options: {
+          limit: &apos;1024&apos;
+      }
+  }, ]
+}
+</code></pre></li>
+</ul>
+<pre><code>{
+    test: /\.jpeg$/,
     use: &apos;url-loader?limit=1024
-}</p>
-<pre><code>* webpack.config.js commonJS&#x6A21;&#x5757;&#x5316;&#x5199;&#x6CD5;
-</code></pre><p>const path = require(&apos;path&apos;);</p>
-<p>const config = {
+}
+</code></pre><ul>
+<li>webpack.config.js commonJS&#x6A21;&#x5757;&#x5316;&#x5199;&#x6CD5;</li>
+</ul>
+<pre><code>const path = require(&apos;path&apos;);
+
+const config = {
   entry: &apos;./path/to/my/entry/file.js&apos;,
   output: {
     path: path.resolve(__dirname, &apos;dist&apos;),
@@ -724,40 +739,44 @@ webpack-cli 2.0.14</li>
   },
   module: {
     rules: [
-      { test: /.txt$/, use: &apos;raw-loader&apos; }
+      { test: /\.txt$/, use: &apos;raw-loader&apos; }
     ]
   }
-};</p>
-<p>module.exports = config;</p>
-<pre><code>
-* In order to use a plugin, you need to `require()` it and add it to the `plugins` array. Most plugins are customizable through options. Since you can use a plugin multiple times in a config for different purposes, you need to create an instance of it by calling it with the `new` operator.
-</code></pre><p>const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;); //installed via npm
-const webpack = require(&apos;webpack&apos;); //to access built-in plugins</p>
-<p>const config = {
+};
+
+module.exports = config;
+</code></pre><ul>
+<li>In order to use a plugin, you need to <code>require()</code> it and add it to the <code>plugins</code> array. Most plugins are customizable through options. Since you can use a plugin multiple times in a config for different purposes, you need to create an instance of it by calling it with the <code>new</code> operator.</li>
+</ul>
+<pre><code>const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;); //installed via npm
+const webpack = require(&apos;webpack&apos;); //to access built-in plugins
+
+const config = {
   module: {
     rules: [
-      { test: /.txt$/, use: &apos;raw-loader&apos; }
+      { test: /\.txt$/, use: &apos;raw-loader&apos; }
     ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({template: &apos;./src/index.html&apos;})
   ]
-};</p>
-<p>module.exports = config;</p>
-<pre><code>* The single `entry` syntax for the entry property is a shorthand for:
-</code></pre><p>const config = {
-  entry: {
-    main: &apos;./path/to/my/entry/file.js&apos;
-  }
-};</p>
-<pre><code>* Configuring the `output` configuration options tells webpack how to write the compiled files to disk. Note that, while there can be multiple `entry` points, only one `output` configuration is specified.
-* If your configuration creates more than a single &quot;chunk&quot; (as with multiple entry points or when using plugins like CommonsChunkPlugin), you should use substitutions to ensure that each file has a unique name.
-* Please remember that setting `NODE_ENV` doesn&apos;t automatically set `mode`.
-* Mode: development&apos;s mains
+};
 
-```webpack.config.js
-// webpack.development.config.js
+module.exports = config;
+</code></pre><ul>
+<li>The single <code>entry</code> syntax for the entry property is a shorthand for:<pre><code>const config = {
+entry: {
+  main: &apos;./path/to/my/entry/file.js&apos;
+}
+};
+</code></pre></li>
+<li>Configuring the <code>output</code> configuration options tells webpack how to write the compiled files to disk. Note that, while there can be multiple <code>entry</code> points, only one <code>output</code> configuration is specified.</li>
+<li>If your configuration creates more than a single &quot;chunk&quot; (as with multiple entry points or when using plugins like CommonsChunkPlugin), you should use substitutions to ensure that each file has a unique name.</li>
+<li>Please remember that setting <code>NODE_ENV</code> doesn&apos;t automatically set <code>mode</code>.</li>
+<li>Mode: development&apos;s mains</li>
+</ul>
+<pre><code class="lang-webpack.config.js">// webpack.development.config.js
 module.exports = {
 + mode: &apos;development&apos;
 - plugins: [
@@ -765,7 +784,8 @@ module.exports = {
 -   new webpack.DefinePlugin({ &quot;process.env.NODE_ENV&quot;: JSON.stringify(&quot;development&quot;) }),
 - ]
 }
-</code></pre><ul>
+</code></pre>
+<ul>
 <li>Mode: production&apos;s mains</li>
 </ul>
 <pre><code>// webpack.production.config.js
@@ -851,7 +871,7 @@ module.exports = {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Webpack 4学习笔记","level":"1.3.3","depth":2,"next":{"title":"Sublime编辑器","level":"1.3.4","depth":2,"path":"chapter2/SublimeTextPlugin.md","ref":"chapter2/SublimeTextPlugin.md","articles":[]},"previous":{"title":"Git学习笔记","level":"1.3.2","depth":2,"path":"chapter2/Git.md","ref":"chapter2/Git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/WebPack.md","mtime":"2018-04-26T00:29:36.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-26T00:29:44.991Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Webpack 4学习笔记","level":"1.3.3","depth":2,"next":{"title":"Sublime编辑器","level":"1.3.4","depth":2,"path":"chapter2/SublimeTextPlugin.md","ref":"chapter2/SublimeTextPlugin.md","articles":[]},"previous":{"title":"Git学习笔记","level":"1.3.2","depth":2,"path":"chapter2/Git.md","ref":"chapter2/Git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/WebPack.md","mtime":"2018-04-26T06:23:07.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-26T06:23:54.978Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
