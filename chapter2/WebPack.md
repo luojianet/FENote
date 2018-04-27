@@ -571,3 +571,9 @@ module.exports = {
 * 和以上描述的 `DefinePlugin` 实例相同，`--define process.env.NODE_ENV="'production'"`也会做同样的事情。并且，`webpack -p` 将自动地调用上述这些标记，从而调用需要引入的插件。`webpack -d`
 * `-d` 含义`--debug --devtool cheap-module-eval-source-map --output-pathinfo`
 * `-p` 含义`--optimize-minimize --define process.env.NODE_ENV="production"`
+* What is commonjs2 ?[issue](https://github.com/webpack/webpack/issues/1114#issuecomment-105509929)
+> CommonJs spec defines only `exports`. But `odule.exports` is used by node.js and many other CommonJs implementations.
+>
+> `commonjs` mean pure CommonJs
+>
+> `commonjs2` also includes the module.exports stuff.
