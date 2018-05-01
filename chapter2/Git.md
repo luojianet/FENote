@@ -298,6 +298,20 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 Dropped refs/stash@{0} (1abc634d2849eb858d6a30d6a4ab353758d782fa)
 ```
+* 配置别名
+
+```
+Administrator@yanhu MINGW64 /c/github/FEbook (master)
+$ git config --global alias.st status
+
+Administrator@yanhu MINGW64 /c/github/FEbook (master)
+$ git st
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
 
 # 笔记
 * git init本地初始化一个版本库
@@ -352,3 +366,4 @@ origin  git@github.com:michaelliao/learngit.git (push)
 * 推送分支，就是把该分支上的所有本地提交推送到远程库。推送时，要指定本地分支，这样，Git就会把该分支推送到远程库对应的远程分支上：`git push origin master`
 * 创建远程`origin`的`dev`分支到本地，于是他用这个命令创建本地`dev`分支：`git checkout -b dev origin/dev`
 * 敲命令`git tag <name>`就可以打一个新标签,可以用命令`git tag`查看所有标签,给某个commit打标签`git tag v0.9 6224937`
+* 别名：敲`git st`就表示`git status`，`co`表示`checkout`，`ci`表示`commit`，`br`表示`branch`
