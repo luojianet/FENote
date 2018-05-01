@@ -2,6 +2,7 @@
 
 * [简介](README.md)
 * [技术](chapter1/README.md)
+	* [JavaScript权威指南](chapter1/javascript.md)
 	* [NodeJS学习笔记](chapter1/NodeJS.md)
 * [工具](chapter2/README.md)
 	* [NPM学习笔记](chapter2/NPM.md)

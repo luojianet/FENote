@@ -11,3 +11,10 @@
 	```
 * 当将函数和对象合并写在一起时，函数就变成了“方法”。
 * a.push(1,2,3) //push()方法向数组中添加元素
+* 按照惯例构造函数均以大写字母开始
+	```
+	function Point(x,y){
+		this.x = x;
+		this.y = y;
+	}
+* 注册事件兼容性写法image.addEventListener("click",hide,false),image.attachEvent("onclick",hide);
