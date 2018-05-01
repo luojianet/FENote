@@ -18,3 +18,4 @@
 		this.y = y;
 	}
 * 注册事件兼容性写法image.addEventListener("click",hide,false),image.attachEvent("onclick",hide);
+* JavaScript程序是用Unicode字符集编写的。
