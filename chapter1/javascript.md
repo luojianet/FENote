@@ -21,3 +21,4 @@
 * JavaScript程序是用Unicode字符集编写的。
 * JavaScript是区分大小写的语言。也就是说，关键字、变量、函数名和所有的标识符都必须采取一致的大小写形式。但需要注意的是，HTML并不区分大小写。例如，在HTML中设置事件处理程序时，onclick属性可以写成onClick，但在JavaScript代码中，必须使用小写的onclick。
 * "a".charCodeAt(0).toString(16)=>61,"a"==="\u0061"
+* 所谓直接量“literal”，就是程序中直接使用的数据值。数字、字符串、布尔值、正则表达式、null、undefined
