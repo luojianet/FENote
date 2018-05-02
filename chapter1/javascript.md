@@ -20,3 +20,4 @@
 * 注册事件兼容性写法image.addEventListener("click",hide,false),image.attachEvent("onclick",hide);
 * JavaScript程序是用Unicode字符集编写的。
 * JavaScript是区分大小写的语言。也就是说，关键字、变量、函数名和所有的标识符都必须采取一致的大小写形式。但需要注意的是，HTML并不区分大小写。例如，在HTML中设置事件处理程序时，onclick属性可以写成onClick，但在JavaScript代码中，必须使用小写的onclick。
+* "a".charCodeAt(0).toString(16)=>61,"a"==="\u0061"
