@@ -17,6 +17,7 @@
 		this.x = x;
 		this.y = y;
 	}
+	```
 * 注册事件兼容性写法image.addEventListener("click",hide,false),image.attachEvent("onclick",hide);
 * JavaScript程序是用Unicode字符集编写的。
 * JavaScript是区分大小写的语言。也就是说，关键字、变量、函数名和所有的标识符都必须采取一致的大小写形式。但需要注意的是，HTML并不区分大小写。例如，在HTML中设置事件处理程序时，onclick属性可以写成onClick，但在JavaScript代码中，必须使用小写的onclick。
@@ -24,3 +25,4 @@
 * 所谓直接量“literal”，就是程序中直接使用的数据值。数字、字符串、布尔值、正则表达式、null、undefined
 * 出于可移植性和易于书写的考虑，通常我们只使用ASCII['æski]字母和数字来书写标识符。
 * 如果当前语句和下一行语句无法合并解析，JavaScript则在第一行后填补分号，这是通用规则，但有两个例外。第一个例外是在涉及return、break和continue语句的场景中。第二个例外是在涉及“++”，“--”运算符的时候。
+* 在编程语言中，能够表示操作的值的类型称做数据类型，编程语言最基本的特性就是能够支持多种数据类型。变量是一个值的符号名称，可以通过名称来获得对值的引用。JavaScript的数据类型分为两类：原始类型(primitive type)和对象类型(object type)。
