@@ -30,3 +30,14 @@
 * JavaScript的类型分为原始类型和对象类型，也可分为可以拥有方法的类型和不能拥有方法的类型，同样可以分为可变(mutable)类型和不可变(immutable)类型。
 * JavaScript变量是无类型的(untyped)，变量可以被赋予任何类型的值，同样一个变量也可以重新赋予不同类型的值。
 * 当一个数字直接出现在JavaScript程序中，我们称之为数字直接量(numeric literal)。在任何数字直接量前添加负号(-)可以得到他们的负值。但负号是一元求反运算符，并不是数字直接量语法的组成部分。
+* Math.max(x,y,z),Math.min(x,y,z)
+* 被零整除在JavaScript并不报错：它只是简单的返回无穷大(Infinity)或负无穷大(-Infinity)。但有一个例外，零除以零是没有意义的，这种整除运算结果也是一个非数字(not-a-number)值，用NaN表示。无穷大除以无穷大、给任意负数作开方运算或者算术运算符与不是数字或无法转换为数字的操作数一起使用时都将返回NaN。
+* Javascript中的非数字值有一点特殊：它和任何值都不相等，包括自身。也就是说，没办法通过x==NaN来判断变量x是否是NaN。相反，应当使用x！=x来判断，当且仅当x为NaN的时候，表达式的结果才为true。函数isNaN()的作用与此类似，如果参数是NaN或者是一个非数字值，则返回true。JavaScript中有一个类似的函数isFinite()，在参数不是NaN、Infinity、或-Infinity的时候返回true。
+* 在ECMAScript3中，字符串直接量必须写在一行中，而ECMAScript5中，字符串直接量可以拆分成数行，每行必须以反斜线(\\)结束，反斜线和行结束符都不算是字符串直接量的内容。
+* str.substring(index,index),str.slice(index,index),str.slice(-index),str.toUpperCase(),str.toLowerCase()。
+* 在javascript中字符串是固定不变的，类似replace()和toUpperCase()的方法都返回新字符串，原字符串本身并没有发生改变。在ECMAScript5中，字符串可以当做只读数组，除了使用charAt()方法，也可以使用方括号来访问字符串总的单个字符。
+* RegExp并不是JavaScript的基本类型。和Date一样，它只是一种具有实用API的特殊对象。正则表达式的语法很复杂，API也很丰富。在两条斜线之间的文本构成了一个正则表达式直接量。第二条斜线之后也可以跟随一个或多个字母，用来修饰匹配模式的含义。
+* RegExp对象定义了很多有用的方法，字符串同样具有可以接受RegExp参数的方法。`pattern.test`,`text.search`,`text.match`,`text.replace`,`text.split`
+* 通常认为null是它自有类型的唯一一个成员，它可以表示数字、字符串、对象是“无值”的。undefined是预定义的全局变量(它和null不一样，它不是关键字)，它的值就是“未定义”。
+# 遗留的问题
+* 二进制浮点数和四舍五入错误，IEEE-754浮点数表示法，JavaScript权威指南37page
