@@ -1,3 +1,6 @@
+# 学习列表
+* [JavaScript 严格模式下this的几种指向](https://segmentfault.com/a/1190000010108912)
+
 # 笔记
 * Javascript的语法源自Java，它的一等函数(first-class function)来自于Scheme，它的基于原型(prototype-based)的继承来自于Self。
 * 当学习一门新的编程语言的时候，应当对照书中的示例边学边动手做，反复演练以加深自己的理解。
@@ -69,7 +72,11 @@
 13+Number("14")
 ```
 * 在计算机程序中数字的解析和格式化是非常普通的工作，JavaScript中提供了专门的函数和方法用来做更加精确的数字到字符串和字符串到数字的转换。
+* Number类定义的toString()方法可以接收表示转换基数(radix)的可选参数，如果不指定此参数，转换规则将基于十进制。
+
+
 # 遗留的问题
 * 二进制浮点数和四舍五入错误，IEEE-754浮点数表示法，JavaScript权威指南37page
 * javascript类型转换规则有很多详细的知识点，看一遍感觉还有很多遗漏之处有时间再看一遍,JavaScript权威指南48page
 * 3个方法有时间再细看toFixed、toExponential、toPrecision,JavaScript权威指南51page
+* 位运算符，JavaScript权威指南72page
