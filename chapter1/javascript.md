@@ -71,4 +71,4 @@
 # 遗留的问题
 * 二进制浮点数和四舍五入错误，IEEE-754浮点数表示法，JavaScript权威指南37page
 * javascript类型转换规则有很多详细的知识点，看一遍感觉还有很多遗漏之处有时间再看一遍,JavaScript权威指南48page
-* 3个方法有时间再细看toFixed、toExponential、toPrecision
+* 3个方法有时间再细看toFixed、toExponential、toPrecision,JavaScript权威指南51page
