@@ -87,6 +87,7 @@ function f(){
 	console.log(scope);=>local
 }
 ```
+* 将函数内的变量声明提前至函数体顶部，同时变量初始化留在原来的位置。
 
 # 遗留的问题
 * 二进制浮点数和四舍五入错误，IEEE-754浮点数表示法，JavaScript权威指南37page
