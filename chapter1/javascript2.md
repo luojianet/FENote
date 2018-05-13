@@ -6,3 +6,4 @@
 * 函数定义表达式定义一个javascript函数。表达式的值是这个新定义的函数。`var square=function(x){return x*x}`
 * 属性访问表达式运算得到一个对象属性或一个数组元素的值。`expression.identifier`和`expression[expression]`
 * 不管使用哪种形式的属性访问表达式，在"."和"["之前的表达式总是会首先计算。如果计算结果是null或者undefined，表达式会抛出一个类型错误异常，因为这两个值都不能包含任意属性。
+* javascript中的调用表达式(invocation expression)是一种调用(或者执行)函数或方法的语法表示。
