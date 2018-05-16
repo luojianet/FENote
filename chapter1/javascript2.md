@@ -15,3 +15,11 @@
 * 左值(lvalue)是一个古老的术语，它是指“表达式只能出现在赋值运算符的左侧”。在javascript中，变量、对象属性和数组元素均是左值。
 * 表4-1：javascript运算符![javascript-operator.png](./images/javascript-operator.png)
 * 需要注意的是，属性访问表达式和调用表达式的优先级要比表4-1中列出的所有运算符都要高。`typeof my.functions[x](y)`
+* 运算
+```
+true+true = > 2
+2 + null => 2
+2 + undefined => NaN
+1 + 2 + " blind mice" => "3 blind mice"
+1 + (2+" blind mice") => "12 blind mice"
+```
