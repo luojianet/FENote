@@ -14,4 +14,4 @@
 * Javascript运算符通常会根据需要对操作数进行类型转换。乘法运算符“*”希望操作数为数字，但表达式“3”*“5”却是合法的，因为JavaScript会将操作数转换为数字。这个表达式的值是数字15，而不是字符串“15”。
 * 左值(lvalue)是一个古老的术语，它是指“表达式只能出现在赋值运算符的左侧”。在javascript中，变量、对象属性和数组元素均是左值。
 * 表4-1：javascript运算符![javascript-operator.png](./images/javascript-operator.png)
-* 
+* 需要注意的是，属性访问表达式和调用表达式的优先级要比表4-1中列出的所有运算符都要高。`typeof my.functions[x](y)`
