@@ -23,3 +23,4 @@ true+true = > 2
 1 + 2 + " blind mice" => "3 blind mice"
 1 + (2+" blind mice") => "12 blind mice"
 ```
+* 递增“++”运算符的返回值依赖于它相对于操作数的位置。当运算符在操作数之前，称为“前增量运算符”(pre-increment operator)，它对操作数进行增量计算，并返回计算后的值。当运算符在操作数之后，称为“后增量运算符”(post-increment operator)，它对操作数进行增量计算，但返回未做增量(unincrement)计算的值。
