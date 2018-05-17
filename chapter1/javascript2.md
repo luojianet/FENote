@@ -24,3 +24,4 @@ true+true = > 2
 1 + (2+" blind mice") => "12 blind mice"
 ```
 * 递增“++”运算符的返回值依赖于它相对于操作数的位置。当运算符在操作数之前，称为“前增量运算符”(pre-increment operator)，它对操作数进行增量计算，并返回计算后的值。当运算符在操作数之后，称为“后增量运算符”(post-increment operator)，它对操作数进行增量计算，但返回未做增量(unincrement)计算的值。
+* “==”和“===”运算符用于比较两个值是否相等，当然他们对相等的定义不尽相同。“===”也称为严格相等运算符(strict equality operator)，有时也称做恒等运算符(identity operator),它用来检测两个操作数是否严格相等。“==”运算符称做相等运算符(equality operator)，它用来检测两个操作数是否相等，这里的相等的定义非常宽松，可以允许进行类型转换。
