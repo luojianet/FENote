@@ -74,3 +74,4 @@ for(a[i++] in o)/*empty*/
 ```
 * break和continue是javascript中唯一可以使用语句标签的语句。
 * 单独使用break语句的作用是立即退出最内层的循环货switch语句。
+* 不管continue语句带不带标签，它只能在循环体内使用。在其它地方使用将会报语法错误。
