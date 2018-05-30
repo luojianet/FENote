@@ -72,3 +72,5 @@ var o={x:1,y:2,z:3};
 var a=[],i=0;
 for(a[i++] in o)/*empty*/
 ```
+* break和continue是javascript中唯一可以使用语句标签的语句。
+* 单独使用break语句的作用是立即退出最内层的循环货switch语句。
