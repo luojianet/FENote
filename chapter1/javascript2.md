@@ -76,3 +76,4 @@ for(a[i++] in o)/*empty*/
 * 单独使用break语句的作用是立即退出最内层的循环货switch语句。
 * 不管continue语句带不带标签，它只能在循环体内使用。在其它地方使用将会报语法错误。
 * 和break语句类似，带标签的continue语句可以用在嵌套的循环中，用以跳出多层次嵌套的循环体逻辑。同样和break语句类似，在continue语句和labelname之间不能有换行。
+* try/catch/finally语句是javascript的异常处理机制。其中try从句定义了需要处理的异常所在的代码块。catch从句跟随在try从句之后，当try块内某处发生里异常时，调用catch内的代码逻辑。catch从句后跟随finally块，后者中放置清理代码，不管try块中是否产生异常，finally块内的逻辑总是会执行。尽管catch和finally都是可选的，但try从句需要至少二者之一与之组成完整的语句。try、catch和finally语句块都需要使用花括号括起来，这里的花括号是必需的，即使从句中只有一条语句也不能省略花括号。
