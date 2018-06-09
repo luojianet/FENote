@@ -15,3 +15,4 @@
 	* [MarkdownCheatSheet](chapter2/MarkdownCheatSheet.md)
 * [框架](chapter3/README.md)
 	* [vueJS介绍](chapter3/vue01.md)
+	* [vueJS1](chapter3/vue02.md)
