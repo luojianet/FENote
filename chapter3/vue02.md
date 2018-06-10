@@ -78,3 +78,21 @@ vm.$watch('a', function (newValue, oldValue) {
 })
 ```
 以后你可以在 [API 参考](https://cn.vuejs.org/v2/api/#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7)中查阅到完整的实例属性和方法的列表。
+# 实例生命周期钩子
+每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置`数据监听`、`编译模板`、`将实例挂载到 DOM` 并`在数据变化时更新 DOM` 等。同时在这个过程中也会运行一些叫做`生命周期钩子`的函数，这给了用户在不同阶段添加自己的代码的机会。
+```
+new Vue({
+  data: {
+    a: 1
+  },
+  created: function () {
+    // `this` 指向 vm 实例
+    console.log('a is: ' + this.a)
+  }
+})
+// => "a is: 1"
+```
+生命周期钩子的 `this` 上下文指向调用它的 Vue 实例。
+
+不要在选项属性或回调上使用箭头函数，比如 `created: () => console.log(this.a)` 或 `vm.$watch('a', newValue => this.myMethod())`。因为箭头函数是和父级上下文绑定在一起的，`this` 不会是如你所预期的 Vue 实例，经常导致 `Uncaught TypeError: Cannot read property of undefined` 或 `Uncaught TypeError: this.myMethod is not a function` 之类的错误。
+
