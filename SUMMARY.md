@@ -17,3 +17,4 @@
 	* [vueJS介绍](chapter3/vue01.md)
 	* [Vue 实例](chapter3/vue02.md)
 	* [Vue 模板语法](chapter3/vue03.md)
+	* [Vue 计算属性和侦听器](chapter3/vue03.md)
