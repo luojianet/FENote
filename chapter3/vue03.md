@@ -55,8 +55,9 @@ Mustache 语法不能作用在 HTML 特性上，遇到这种情况应该使用 [
 ```
 <a v-on:click="doSomething">...</a>
 ```
-
-
-
-
-
+## 修饰符
+修饰符 (Modifiers) 是以半角句号 `.` 指明的特殊后缀，用于指出一个指令应该以特殊方式绑定。例如，`.prevent` 修饰符告诉 `v-on` 指令对于触发的事件调用 `event.preventDefault()`：
+```
+<form v-on:submit.prevent="onSubmit">...</form>
+```
+在接下来对 v-on 和 v-for 等功能的探索中，你会看到修饰符的其它例子。
