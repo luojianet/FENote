@@ -63,3 +63,16 @@ data: {
 ```
 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
 ```
+## 用在组件上
+当在一个自定义组件上使用 `class` 属性时，这些类将被添加到该组件的根元素上面。这个元素上已经存在的类不会被覆盖。
+```
+Vue.component('my-component', {
+  template: '<p class="foo bar">Hi</p>'
+})
+
+<my-component class="baz boo"></my-component>
+```
+对于带数据绑定 class 也同样适用：
+```
+<my-component v-bind:class="{ active: isActive }"></my-component>
+```
