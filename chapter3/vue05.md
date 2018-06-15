@@ -46,3 +46,20 @@ computed: {
   }
 }
 ```
+## 数组语法
+我们可以把一个数组传给 v-bind:class，以应用一个 class 列表：
+```
+<div v-bind:class="[activeClass, errorClass]"></div>
+data: {
+  activeClass: 'active',
+  errorClass: 'text-danger'
+}
+```
+如果你也想根据条件切换列表中的 class，可以用三元表达式：
+```
+<div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
+```
+不过，当有多个条件 class 时这样写有些繁琐。所以在数组语法中也可以使用对象语法：
+```
+<div v-bind:class="[{ active: isActive }, errorClass]"></div>
+```
