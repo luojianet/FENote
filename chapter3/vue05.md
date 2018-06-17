@@ -102,3 +102,5 @@ data: {
 ```
 <div v-bind:style="[baseStyles, overridingStyles]"></div>
 ```
+## 自动添加前缀
+当 `v-bind:style` 使用需要添加[浏览器引擎前缀](https://developer.mozilla.org/zh-CN/docs/Glossary/Vendor_Prefix)的 CSS 属性时，如 `transform`，Vue.js 会自动侦测并添加相应的前缀。
