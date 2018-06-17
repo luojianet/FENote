@@ -77,6 +77,7 @@ Vue.component('my-component', {
 <my-component v-bind:class="{ active: isActive }"></my-component>
 ```
 # 绑定内联样式
+## 对象语法
 `v-bind:style` 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。CSS 属性名可以用驼峰式 (camelCase) 或短横线分隔 (kebab-case，记得用单引号括起来) 来命名：
 ```
 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
@@ -96,3 +97,8 @@ data: {
 }
 ```
 同样的，对象语法常常结合返回对象的计算属性使用。
+## 数组语法
+`v-bind:styl` 的数组语法可以将多个样式对象应用到同一个元素上：
+```
+<div v-bind:style="[baseStyles, overridingStyles]"></div>
+```
