@@ -19,3 +19,4 @@
 	* [Vue 模板语法](chapter3/vue03.md)
 	* [Vue 计算属性和侦听器](chapter3/vue04.md)
 	* [Vue Class 与 Style 绑定](chapter3/vue05.md)
+	* [Vue 条件渲染](chapter3/vue06.md)
