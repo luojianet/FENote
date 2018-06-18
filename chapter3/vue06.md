@@ -25,3 +25,14 @@
   <p>Paragraph 2</p>
 </template>
 ```
+## v-else
+你可以使用 `v-else` 指令来表示 `v-if` 的“else 块”：
+```
+<div v-if="Math.random() > 0.5">
+  Now you see me
+</div>
+<div v-else>
+  Now you don't
+</div>
+```
+`v-else` 元素必须紧跟在带 `v-if` 或者 `v-else-if` 的元素的后面，否则它将不会被识别。
