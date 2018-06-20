@@ -9,6 +9,34 @@ gitbook 的基本用法非常简单，基本上就只有两步：
 * [git serve can't restart when file changes](https://github.com/GitbookIO/gitbook/issues/1379)
 
 # CLI
+* gitbook -h
+```
+$ gitbook -h
+
+  Usage: gitbook [options] [command]
+
+
+  Options:
+
+    -v, --gitbook [version]  specify GitBook version to use
+    -d, --debug              enable verbose error
+    -V, --version            Display running versions of gitbook and gitbook-cli
+    -h, --help               output usage information
+
+
+  Commands:
+
+    ls                        List versions installed locally
+    current                   Display currently activated version
+    ls-remote                 List remote versions available for install
+    fetch [version]           Download and install a <version>
+    alias [folder] [version]  Set an alias named <version> pointing to <folder>
+    uninstall [version]       Uninstall a version
+    update [tag]              Update to the latest version of GitBook
+    help                      List commands for GitBook
+    *                         run a command with a specific gitbook version
+
+```
 * gitbook serve
 
 `gitbook serve` 命令实际上会首先调用 `gitbook build` 编译书籍，完成以后会打开一个 web 服务器，监听在本地的 4000 端口。
