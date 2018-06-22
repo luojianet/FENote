@@ -96,3 +96,11 @@ Vue 包含一组观察数组的变异方法，所以它们也将会触发视图�
 * reverse()
 
 你打开控制台，然后用前面例子的 items 数组调用变异方法：`example1.items.push({ message: 'Baz' })` 。
+## 替换数组
+变异方法 (mutation method)，顾名思义，会改变被这些方法调用的原始数组。相比之下，也有非变异 (non-mutating method) 方法，例如：`filter()`, `concat()` 和 `slice()` 。这些不会改变原始数组，但总是返回一个新数组。当使用非变异方法时，可以用新数组替换旧数组：
+```
+example1.items = example1.items.filter(function (item) {
+  return item.message.match(/Foo/)
+})
+```
+你可能认为这将导致 Vue 丢弃现有 DOM 并重新渲染整个列表。幸运的是，事实并非如此。Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的、启发式的方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作。
