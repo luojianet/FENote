@@ -104,3 +104,34 @@ example1.items = example1.items.filter(function (item) {
 })
 ```
 你可能认为这将导致 Vue 丢弃现有 DOM 并重新渲染整个列表。幸运的是，事实并非如此。Vue 为了使得 DOM 元素得到最大范围的重用而实现了一些智能的、启发式的方法，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作。
+## 注意事项
+由于 JavaScript 的限制，Vue 不能检测以下变动的数组：
+
+1. 当你利用索引直接设置一个项时，例如：`vm.items[indexOfItem] = newValue`
+2. 当你修改数组的长度时，例如：`vm.items.length = newLength`
+
+```
+var vm = new Vue({
+  data: {
+    items: ['a', 'b', 'c']
+  }
+})
+vm.items[1] = 'x' // 不是响应性的
+vm.items.length = 2 // 不是响应性的
+```
+为了解决第一类问题，以下两种方式都可以实现和 `vm.items[indexOfItem] = newValue` 相同的效果，同时也将触发状态更新：
+```
+// Vue.set
+Vue.set(vm.items, indexOfItem, newValue)
+
+// Array.prototype.splice
+vm.items.splice(indexOfItem, 1, newValue)
+```
+你也可以使用 `vm.$set` 实例方法，该方法是全局方法 `Vue.set` 的一个别名：
+```
+vm.$set(vm.items, indexOfItem, newValue)
+```
+为了解决第二类问题，你可以使用 splice：
+```
+vm.items.splice(newLength)
+```
