@@ -211,3 +211,13 @@ methods: {
   <span v-for="n in 10">{{ n }} </span>
 </div>
 ```
+## v-for on a <template>
+类似于 `v-if`，你也可以利用带有 `v-for` 的 `<template>` 渲染多个元素。比如：
+```
+<ul>
+  <template v-for="item in items">
+    <li>{{ item.msg }}</li>
+    <li class="divider" role="presentation"></li>
+  </template>
+</ul>
+```
