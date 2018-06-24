@@ -239,3 +239,11 @@ methods: {
 </ul>
 <p v-else>No todos left!</p>
 ```
+## 一个组件的 v-for
+在自定义组件里，你可以像任何普通元素一样用 `v-for` 。
+```
+<my-component v-for="item in items" :key="item.id"></my-component>
+```
+2.2.0+ 的版本里，当在组件中使用 `v-for` 时，`key` 现在是必须的。
+
+然而，任何数据都不会被自动传递到组件里，因为组件有自己独立的作用域。为了把迭代数据传递到组件里，我们要用 `props` ：
