@@ -22,3 +22,4 @@
 		* [Vue Class 与 Style 绑定](chapter3/vue05.md)
 		* [Vue 条件渲染](chapter3/vue06.md)
 		* [Vue 列表渲染](chapter3/vue07.md)
+		* [Vue 事件处理](chapter3/vue08.md)
