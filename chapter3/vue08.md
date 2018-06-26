@@ -40,3 +40,19 @@ var example2 = new Vue({
 // 也可以用 JavaScript 直接调用方法
 example2.greet() // => 'Hello Vue.js!'
 ```
+# 内联处理器中的方法
+除了直接绑定到一个方法，也可以在内联 JavaScript 语句中调用方法：
+```
+<div id="example-3">
+  <button v-on:click="say('hi')">Say hi</button>
+  <button v-on:click="say('what')">Say what</button>
+</div>
+new Vue({
+  el: '#example-3',
+  methods: {
+    say: function (message) {
+      alert(message)
+    }
+  }
+})
+```
