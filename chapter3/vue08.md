@@ -104,3 +104,32 @@ Vue 还对应 `addEventListener` 中的 [passive 选项](https://developer.mozil
 这个 `.passive` 修饰符尤其能够提升移动端的性能。
 
 不要把 `.passive` 和 `.prevent` 一起使用，因为 `.prevent` 将会被忽略，同时浏览器可能会向你展示一个警告。请记住，`.passive` 会告诉浏览器你不想阻止事件的默认行为。
+# 按键修饰符
+在监听键盘事件时，我们经常需要检查常见的键值。Vue 允许为 v-on 在监听键盘事件时添加按键修饰符：
+```
+<!-- 只有在 `keyCode` 是 13 时调用 `vm.submit()` -->
+<input v-on:keyup.13="submit">
+```
+记住所有的 `keyCode` 比较困难，所以 Vue 为最常用的按键提供了别名：
+```
+<!-- 同上 -->
+<input v-on:keyup.enter="submit">
+
+<!-- 缩写语法 -->
+<input @keyup.enter="submit">
+```
+全部的按键别名：
+* .enter
+* .tab
+* .delete (捕获“删除”和“退格”键)
+* .esc
+* .space
+* .up
+* .down
+* .left
+* .right
+可以通过全局 `config.keyCodes` 对象[自定义按键修饰符别名](https://cn.vuejs.org/v2/api/#keyCodes)：
+```
+// 可以使用 `v-on:keyup.f1`
+Vue.config.keyCodes.f1 = 112
+```
