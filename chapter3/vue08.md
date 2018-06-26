@@ -133,3 +133,13 @@ Vue 还对应 `addEventListener` 中的 [passive 选项](https://developer.mozil
 // 可以使用 `v-on:keyup.f1`
 Vue.config.keyCodes.f1 = 112
 ```
+
+## 自动匹配按键修饰符
+你也可直接将 `KeyboardEvent.key` 暴露的任意有效按键名转换为 `kebab-case` 来作为修饰符：
+```
+<input @keyup.page-down="onPageDown">
+```
+在上面的例子中，处理函数仅在 `$event.key === 'PageDown'` 时被调用。
+
+有一些按键 (.esc 以及所有的方向键) 在 IE9 中有不同的 key 值, 如果你想支持 IE9，它们的内置别名应该是首选。
+
