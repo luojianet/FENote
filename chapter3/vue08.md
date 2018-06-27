@@ -172,3 +172,8 @@ Vue.config.keyCodes.f1 = 112
 <!-- 没有任何系统修饰符被按下的时候才触发 -->
 <button @click.exact="onClick">A</button>
 ```
+## 鼠标按钮修饰符
+* .left
+* .right
+* .middle
+这些修饰符会限制处理函数仅响应特定的鼠标按钮。
