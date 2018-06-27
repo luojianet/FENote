@@ -121,7 +121,7 @@ Vue 还对应 `addEventListener` 中的 [passive 选项](https://developer.mozil
 全部的按键别名：
 * .enter
 * .tab
-* .delete (捕获“删除”和“退格”键)
+* .delete `(捕获“删除”和“退格”键)`
 * .esc
 * .space
 * .up
@@ -141,7 +141,7 @@ Vue.config.keyCodes.f1 = 112
 ```
 在上面的例子中，处理函数仅在 `$event.key === 'PageDown'` 时被调用。
 
-有一些按键 (.esc 以及所有的方向键) 在 IE9 中有不同的 key 值, 如果你想支持 IE9，它们的内置别名应该是首选。
+有一些按键 `(.esc 以及所有的方向键)` 在 IE9 中有不同的 key 值, 如果你想支持 IE9，它们的内置别名应该是首选。
 
 # 系统修饰键
 可以用如下修饰符来实现仅在按下相应按键时才触发鼠标或键盘事件的监听器。
@@ -177,3 +177,10 @@ Vue.config.keyCodes.f1 = 112
 * .right
 * .middle
 这些修饰符会限制处理函数仅响应特定的鼠标按钮。
+
+# 为什么在 HTML 中监听事件?
+你可能注意到这种事件监听的方式违背了关注点分离 (separation of concern) 这个长期以来的优良传统。但不必担心，因为所有的 Vue.js 事件处理方法和表达式都严格绑定在当前视图的 ViewModel 上，它不会导致任何维护上的困难。实际上，使用 v-on 有几个好处：
+
+1. 扫一眼 HTML 模板便能轻松定位在 JavaScript 代码里对应的方法。
+2. 因为你无须在 JavaScript 里手动绑定事件，你的 ViewModel 代码可以是非常纯粹的逻辑，和 DOM 完全解耦，更易于测试。
+3. 当一个 ViewModel 被销毁时，所有的事件处理器都会自动被删除。你无须担心如何清理它们。
