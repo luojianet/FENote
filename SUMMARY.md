@@ -23,3 +23,4 @@
 		* [Vue 条件渲染](chapter3/vue06.md)
 		* [Vue 列表渲染](chapter3/vue07.md)
 		* [Vue 事件处理](chapter3/vue08.md)
+		* [Vue 表单输入绑定](chapter3/vue09.md)
