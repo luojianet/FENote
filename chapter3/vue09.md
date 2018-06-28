@@ -9,3 +9,12 @@
 <input v-model="message" placeholder="edit me">
 <p>Message is: {{ message }}</p>
 ```
+## 多行文本
+```
+<span>Multiline message is:</span>
+<p style="white-space: pre-line;">{{ message }}</p>
+<br>
+<textarea v-model="message" placeholder="add multiple lines"></textarea>
+```
+在文本区域插值 (`<textarea></textarea>`) 并不会生效，应用 v-model 来代替。
+## 复选框
