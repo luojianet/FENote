@@ -312,7 +312,10 @@ Your branch is ahead of 'origin/master' by 2 commits.
 
 nothing to commit, working tree clean
 ```
-
+* Git远程仓库地址变更本地如何修改
+```
+git remote set-url origin git@gitlab.xunlei.cn:yanhu/rebuild.git
+```
 # 笔记
 * git init本地初始化一个版本库
 * 如果嫌输出信息太多，看得眼花缭乱的，可以试试加上`--pretty=oneline`参数
